@@ -4,9 +4,13 @@ ideas:&#x20;
 
 do a run with just grunts! no growls!
 
+adjust sensitivity settings
+
 finalizing:&#x20;
 
-add in validation data, run a bunch extra seeds to confirm stability.<br>
+add in validation data, run a bunch extra seeds to confirm stability.
+
+run this back through birdnet gui and prep the actual workflow<br>
 
 | Step                                                     | What It Does                                                  | Effort | Potential Gain                     | Notes                                                    |
 | -------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------------------------- | -------------------------------------------------------- |
