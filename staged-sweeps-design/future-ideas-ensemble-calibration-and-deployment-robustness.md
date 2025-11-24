@@ -1,6 +1,12 @@
 # future ideas- ensemble, calibration, and deployment robustness
 
-ideas: do a run with just grunts! no growls!<br>
+ideas:&#x20;
+
+do a run with just grunts! no growls!
+
+finalizing:&#x20;
+
+add in validation data, run a bunch extra seeds to confirm stability.<br>
 
 | Step                                                     | What It Does                                                  | Effort | Potential Gain                     | Notes                                                    |
 | -------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------------------------- | -------------------------------------------------------- |
