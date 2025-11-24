@@ -1,7 +1,6 @@
-# Stage 5 - ensemble, calibration, and deployment robustness
+# future ideas- ensemble, calibration, and deployment robustness
 
-ideas:\
-
+ideas: do a run with just grunts! no growls!<br>
 
 | Step                                                     | What It Does                                                  | Effort | Potential Gain                     | Notes                                                    |
 | -------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------------------------- | -------------------------------------------------------- |
