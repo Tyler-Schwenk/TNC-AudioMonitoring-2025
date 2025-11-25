@@ -11,5 +11,7 @@
   * [Stage 4 - Data quality distributions](staged-sweeps-design/stage-4-data-quality-distributions.md)
   * [Stage 5 - data curation](staged-sweeps-design/stage-5-data-curation.md)
   * [Stage 6: Data Composition](staged-sweeps-design/stage-6-data-composition.md)
+  * [Stage 7](staged-sweeps-design/stage-7.md)
+  * [Stage 8](staged-sweeps-design/stage-8.md)
   * [future ideas- ensemble, calibration, and deployment robustness](staged-sweeps-design/future-ideas-ensemble-calibration-and-deployment-robustness.md)
 * [HITL Training](hitl-training.md)
