@@ -36,7 +36,10 @@ Stage 6 systematically tested the impact of curated data subsets on model perfor
   * This has two axis - first, I selected the highest quality low data to include in our training set. so i went to splits/training and pulled out all the low quality data. i ran this through  which was trained on  only high and medium quality data. then i took the top predictions for those files an pulled the files the top x% of filed in terms of RADR score to separate folders. this resulted i nthe 4 folders below:\
     small: 51 (5%), medium: 154 (15%), large: 309 (30%), xl: 515 (50%)
 * **Negative Subsets:**
-  * I took stage3\_046
+  * I took 20,457 new (entirely outside the train/test/val data) negative audio files from brad's audio (audio recorders 2, 9, and 10) and ran them through inference using model stage3\_046. Then to determine the hardest negative files, I took subsets based on the highest confidence value for RADR fora given audio file. The subsets I took were based on the minimum confidence value for the audio file. so I gathered the following subsets:
+  * hardneg\_conf\_min\_50 (+1,401 hard negatives at 50% confidence)
+  * hardneg\_conf\_min\_85 (+981 hard negatives at 85% confidence)
+  * hardneg\_conf\_min\_99 (+475 hard negatives at 99% confidence)
 
 ### Results Summary <a href="#results-summary" id="results-summary"></a>
 

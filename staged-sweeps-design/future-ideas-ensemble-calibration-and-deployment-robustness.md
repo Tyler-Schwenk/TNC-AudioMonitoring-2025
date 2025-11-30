@@ -4,13 +4,15 @@ ideas:&#x20;
 
 do a run with just grunts! no growls!
 
-adjust sensitivity settings
+adjust sensitivity settings - finetue this and make sure it is giving good things
+
+
 
 finalizing:&#x20;
 
 add in validation data, run a bunch extra seeds to confirm stability.
 
-run this back through birdnet gui and prep the actual workflow<br>
+run this back through birdnet gui and prep the actual workflow. give best config stuff<br>
 
 | Step                                                     | What It Does                                                  | Effort | Potential Gain                     | Notes                                                    |
 | -------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------------------------- | -------------------------------------------------------- |
