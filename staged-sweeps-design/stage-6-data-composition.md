@@ -29,11 +29,14 @@ Stage 6 systematically tested the impact of curated data subsets on model perfor
   * hardneg\_conf\_min\_50 (+1,401 hard negatives at 50% confidence)
   * hardneg\_conf\_min\_99 (+475 hard negatives at 99% confidence)
 
-#### Evaluation Metrics <a href="#evaluation-metrics" id="evaluation-metrics"></a>
+#### How Subsets were created <a href="#evaluation-metrics" id="evaluation-metrics"></a>
 
-* **IID (In-Distribution)**: Test set from same distribution as training
-* **OOD (Out-of-Distribution)**: Held-out test set for generalization assessment
-* **Metrics**: F1-score (primary), Precision, Recall
+* **Positive Subsets:**
+  * The goal was to create various sizes of subsets of the Highest quality, low quality data. To do this I ran inference on the test set of low quality data using model stage4\_038, which was trained on only medium/high quality data, ensuring this was the first time the low quality data was seen. I then took subsets of the low quality data by selecting the top performing data based on the confidence rating of the positive detections by the model.&#x20;
+  * This has two axis - first, I selected the highest quality low data to include in our training set. so i went to splits/training and pulled out all the low quality data. i ran this through  which was trained on  only high and medium quality data. then i took the top predictions for those files an pulled the files the top x% of filed in terms of RADR score to separate folders. this resulted i nthe 4 folders below:\
+    small: 51 (5%), medium: 154 (15%), large: 309 (30%), xl: 515 (50%)
+* **Negative Subsets:**
+  * I took stage3\_046
 
 ### Results Summary <a href="#results-summary" id="results-summary"></a>
 
