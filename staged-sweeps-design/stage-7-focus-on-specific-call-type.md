@@ -1,6 +1,6 @@
-# Stage 7
+# Stage 7 - Focus on specific call type
 
-This stage tested using only Grunt/both for training. i will likely drop this
+This stage tested using only Grunt/both for training. This would take a significant amount of time to make a new experiment structure and testing dataset, and I consider it out of the scope of this current contract. It is an idea that could be explored in the future though
 
 
 

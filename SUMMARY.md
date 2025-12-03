@@ -11,7 +11,7 @@
   * [Stage 4 - Data quality distributions](staged-sweeps-design/stage-4-data-quality-distributions.md)
   * [Stage 5 - data curation](staged-sweeps-design/stage-5-data-curation.md)
   * [Stage 6: Data Composition](staged-sweeps-design/stage-6-data-composition.md)
-  * [Stage 7](staged-sweeps-design/stage-7.md)
+  * [Stage 7 - Focus on specific call type](staged-sweeps-design/stage-7-focus-on-specific-call-type.md)
   * [Stage 8](staged-sweeps-design/stage-8.md)
   * [Stage 9](staged-sweeps-design/stage-9.md)
   * [Stage 10](staged-sweeps-design/stage-10.md)
