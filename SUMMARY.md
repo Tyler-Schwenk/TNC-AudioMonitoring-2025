@@ -13,5 +13,6 @@
   * [Stage 6: Data Composition](staged-sweeps-design/stage-6-data-composition.md)
   * [Stage 7](staged-sweeps-design/stage-7.md)
   * [Stage 8](staged-sweeps-design/stage-8.md)
+  * [Stage 9](staged-sweeps-design/stage-9.md)
   * [future ideas- ensemble, calibration, and deployment robustness](staged-sweeps-design/future-ideas-ensemble-calibration-and-deployment-robustness.md)
 * [HITL Training](hitl-training.md)
