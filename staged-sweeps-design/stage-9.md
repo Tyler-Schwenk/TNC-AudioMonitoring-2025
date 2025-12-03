@@ -1,4 +1,4 @@
-# Stage 9
+# Stage 9 - Custom Validation Set
 
 This was where i ttempted using my custom validation set instead of the birdnet default pulling 20 from my standard set.
 
