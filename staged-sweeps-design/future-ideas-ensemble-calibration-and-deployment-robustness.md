@@ -1,5 +1,50 @@
 # future ideas- ensemble, calibration, and deployment robustness
 
+### Deployment Pipeline Plan
+
+#### **Phase 1: Lock in Training Config** (3-5 days)
+
+Run a focused sweep varying only the most promising data compositions:
+
+**Axes:**
+
+* `positive_subsets`: \[`small`, `top50`, `small+top50`]
+* `negative_subsets`: \[`none`, `hardneg_conf_min_50`, `hardneg_conf_min_99`]
+* `balance`: \[`true`] (fixed - clear winner)
+* `seeds`: \[123, 456, 789] (3 seeds per config)
+
+This gives **27 experiments** to identify the most stable high-precision setup.
+
+#### **Phase 2: Held-out Validation** (1 day)
+
+Take the top 3 configs from Phase 1 and:
+
+* Add your held-out val set to the training data (those 3,249 files)
+* Retrain with the same hyperparameters
+* Compare OOD performance - if it improves, use this version
+
+#### **Phase 3: Sensitivity & Threshold Optimization** (2-3 days)
+
+For the best config from Phase 2:
+
+* Run inference at **sensitivity values**: \[0.5, 0.75, 1.0, 1.25, 1.5]
+* For each sensitivity, sweep **min\_conf thresholds**: \[0.1, 0.25, 0.5, 0.75, 0.9]
+* Plot precision vs recall curves to find your desired operating point
+
+#### **Phase 4: Multi-seed Stability Test** (2-3 days)
+
+Train the final config with **10 seeds** to:
+
+* Measure precision/recall variance
+* Select the best-performing checkpoint
+* Have backup models if primary fails
+
+
+
+
+
+
+
 ideas:&#x20;
 
 do a run with just grunts! no growls!
