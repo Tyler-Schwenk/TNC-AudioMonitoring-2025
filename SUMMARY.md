@@ -16,6 +16,7 @@
   * [Stage 9 - Custom Validation Set](staged-sweeps-design/stage-9.md)
   * [Stage 10](staged-sweeps-design/stage-10.md)
   * [Stage 11](staged-sweeps-design/stage-11.md)
+  * [Stage 12](staged-sweeps-design/stage-12.md)
   * [future ideas- ensemble, calibration, and deployment robustness](staged-sweeps-design/future-ideas-ensemble-calibration-and-deployment-robustness.md)
 * [HITL Training](hitl-training.md)
 * [Results Overview](results-overview.md)
