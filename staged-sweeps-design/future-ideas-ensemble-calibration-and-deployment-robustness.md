@@ -1,5 +1,31 @@
 # future ideas- ensemble, calibration, and deployment robustness
 
+All stages use **identical hyperparameters**:
+
+* `learning_rate: 0.0005`
+* `dropout: 0.25`
+* `hidden_units: 512`
+* `batch_size: 32`
+* `epochs: 50`
+
+You haven't swept:
+
+* Learning rate (0.0001, 0.001, 0.01)
+* Dropout (0.1, 0.3, 0.5)
+* Hidden units (256, 1024)
+* Batch size (16, 64)
+* Epochs (more might help)
+
+#### **3. Augmentation Strategy**
+
+All use:
+
+* `mixup: true`
+* `label_smoothing: true`
+* No testing of these as variables
+
+###
+
 ### Deployment Pipeline Plan
 
 #### **Phase 1: Lock in Training Config** (3-5 days)
