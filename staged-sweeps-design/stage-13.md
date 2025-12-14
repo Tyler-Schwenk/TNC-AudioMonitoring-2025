@@ -13,7 +13,7 @@ dataset:
   audio_root: AudioData
   manifest: data/manifest.csv
 experiment:
-  name: stage9_009
+  name: stage9_006
   seed: 123
 training_package:
   include_negatives: true
@@ -22,7 +22,7 @@ training_package:
   - high
   - medium
   positive_subsets:
-  - AudioData\curated\bestLowQuality\medium
+  - AudioData\curated\bestLowQuality\small
   negative_subsets:
   - AudioData\curated\hardNeg\hardneg_conf_min_50
 training:
