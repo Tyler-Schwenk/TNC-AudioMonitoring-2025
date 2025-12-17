@@ -8,9 +8,7 @@ description: >-
 
 ### Executive Summary <a href="#executive-summary" id="executive-summary"></a>
 
-Stage 6 systematically tested the impact of curated data subsets on model performance using a 54-experiment sweep (3 seeds × 2 balance settings × 3 positive subsets × 3 negative subsets).
-
-
+Stage 6 systematically tested the impact of curated data subsets on model performance using a 90-experiment sweep (3 seeds × 2 balance settings × 2\* quality levels x 3 positive subsets × 3 negative subsets).
 
 
 
@@ -20,6 +18,7 @@ Stage 6 systematically tested the impact of curated data subsets on model perfor
 
 * **Seeds**: 3 (123, 456, 789) for reproducibility testing
 * **Balance**: True/False (class balancing on/off)
+* **Quality levels**: 2 (\[high] only, \[high, medium, low]) - \*These were only swept with no positive subsets to avoid redundancy.
 * **Positive Subsets**:
   * None (baseline: 2,017 files)
   * small (+51 files from bestLowQuality)
@@ -29,23 +28,11 @@ Stage 6 systematically tested the impact of curated data subsets on model perfor
   * hardneg\_conf\_min\_50 (+1,401 hard negatives at 50% confidence)
   * hardneg\_conf\_min\_99 (+475 hard negatives at 99% confidence)
 
-tyler is now adding new configs to stage 6 to test the other standard datasets, like this:\
-Created 36 new Stage 6 config files (stage6\_055 through stage6\_090)
+#### Base Config <a href="#sweep-parameters" id="sweep-parameters"></a>
 
-**Experimental Matrix:**
-
-* **Seeds**: 3 (123, 456, 789)
-* **Balance**: 2 (true, false)
-* **Negative subsets**: 3 (none, hardneg\_conf\_min\_50, hardneg\_conf\_min\_99)
-* **Quality levels**: 2 (\[high] only, \[high, medium, low])
-* **Positive subsets**: 0 (none - as requested)
 * **Validation**: false (Stage 6 style)
 
-This fills the gap in your experimental design, letting you compare:
 
-* High-quality-only baseline vs full quality spectrum
-* With/without validation package (Stage 6 vs Stage 12)
-* Impact of hard negatives at both quality levels
 
 
 
@@ -68,11 +55,3 @@ This fills the gap in your experimental design, letting you compare:
 
 
 ### Results
-
-| Balance | Positive Subset | Negative Subset | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
-| ------- | --------------- | --------------- | ------------------- | -------------------------- | ----------------------- |
-| Yes     | none            | hardneg\_99     | **0.902 ± 0.057**   | **0.832 ± 0.098**          | **0.991 ± 0.008**       |
-| Yes     | top50           | hardneg\_99     | **0.893 ± 0.035**   | **0.835 ± 0.065**          | **0.963 ± 0.009**       |
-| Yes     | small           | none            | **0.891 ± 0.056**   | **0.852 ± 0.124**          | **0.944 ± 0.048**       |
-| Yes     | top50           | none            | **0.887 ± 0.035**   | **0.802 ± 0.059**          | **0.993 ± 0.008**       |
-| No      | small           | hardneg\_50     | **0.888 ± 0.047**   | **0.803 ± 0.077**          | **0.997 ± 0.004**       |
