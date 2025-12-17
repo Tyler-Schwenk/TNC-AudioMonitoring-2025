@@ -1,0 +1,31 @@
+Signature,Experiments,Quality,Balance,Positive Subsets,Negative Subsets,ood.f1__mean,ood.f1__std,ood.precision__mean,ood.precision__std,ood.recall__mean,ood.recall__std
+6045f3bb,"stage6_009, stage6_027, stage6_045","high, medium",Yes,top50,hardneg_conf_min_99,0.869,0.071,0.937,0.017,0.814,0.112
+b706d1f8,"stage6_002, stage6_020, stage6_038","high, medium",Yes,none,hardneg_conf_min_50,0.86,0.06,0.903,0.088,0.823,0.051
+23f11c40,"stage6_003, stage6_021, stage6_039","high, medium",Yes,none,hardneg_conf_min_99,0.86,0.107,0.988,0.012,0.773,0.17
+dd37eaf0,"stage6_004, stage6_022, stage6_040","high, medium",Yes,small,none,0.856,0.118,0.953,0.057,0.794,0.196
+37133d18,"stage6_065, stage6_077, stage6_089","high, medium, low",No,none,hardneg_conf_min_50,0.842,0.098,0.772,0.17,0.955,0.073
+ee0a50e6,"stage6_005, stage6_023, stage6_041","high, medium",Yes,small,hardneg_conf_min_50,0.847,0.133,0.943,0.092,0.778,0.192
+d22aa059,"stage6_061, stage6_073, stage6_085",high,No,none,none,0.825,0.067,0.865,0.1,0.791,0.042
+81899e47,"stage6_007, stage6_025, stage6_043","high, medium",Yes,top50,none,0.824,0.071,0.976,0.036,0.721,0.119
+676d61bd,"stage6_001, stage6_019, stage6_037","high, medium",Yes,none,none,0.837,0.141,0.855,0.137,0.836,0.189
+a848c02d,"stage6_013, stage6_031, stage6_049","high, medium",No,small,none,0.833,0.129,0.868,0.096,0.803,0.16
+e4e912af,"stage6_014, stage6_032, stage6_050","high, medium",No,small,hardneg_conf_min_50,0.807,0.086,0.993,0.011,0.684,0.123
+3366d4cd,"stage6_060, stage6_072, stage6_084","high, medium, low",Yes,none,hardneg_conf_min_99,0.791,0.036,0.665,0.056,0.98,0.014
+c66aba25,"stage6_018, stage6_036, stage6_054","high, medium",No,top50,hardneg_conf_min_99,0.795,0.064,0.92,0.098,0.718,0.137
+06c0b100,"stage6_008, stage6_026, stage6_044","high, medium",Yes,top50,hardneg_conf_min_50,0.781,0.034,0.844,0.168,0.773,0.182
+5ca7cc07,"stage6_017, stage6_035, stage6_053","high, medium",No,top50,hardneg_conf_min_50,0.782,0.041,0.923,0.061,0.686,0.089
+2b2868a0,"stage6_058, stage6_070, stage6_082","high, medium, low",Yes,none,none,0.784,0.051,0.656,0.078,0.981,0.016
+3edb394e,"stage6_064, stage6_076, stage6_088","high, medium, low",No,none,none,0.803,0.15,0.706,0.225,0.972,0.026
+e92bf5b2,"stage6_012, stage6_030, stage6_048","high, medium",No,none,hardneg_conf_min_99,0.763,0.043,0.872,0.221,0.729,0.171
+8ff5e4f5,"stage6_059, stage6_071, stage6_083","high, medium, low",Yes,none,hardneg_conf_min_50,0.757,0.027,0.612,0.036,0.996,0.006
+77fca307,"stage6_015, stage6_033, stage6_051","high, medium",No,small,hardneg_conf_min_99,0.758,0.031,0.777,0.194,0.783,0.147
+5dcf1581,"stage6_016, stage6_034, stage6_052","high, medium",No,top50,none,0.785,0.168,0.996,0.005,0.673,0.255
+10b96415,"stage6_006, stage6_024, stage6_042","high, medium",Yes,small,hardneg_conf_min_99,0.749,0.008,0.852,0.206,0.723,0.19
+ddc58a37,"stage6_063, stage6_075, stage6_087",high,No,none,hardneg_conf_min_99,0.767,0.113,0.899,0.173,0.696,0.161
+4712d7d9,"stage6_066, stage6_078, stage6_090","high, medium, low",No,none,hardneg_conf_min_99,0.764,0.106,0.655,0.194,0.965,0.061
+1d24c9a1,"stage6_062, stage6_074, stage6_086",high,No,none,hardneg_conf_min_50,0.727,0.007,0.866,0.198,0.67,0.164
+9164cef2,"stage6_010, stage6_028, stage6_046","high, medium",No,none,none,0.722,0.039,0.831,0.265,0.717,0.204
+3c7fa7cc,"stage6_011, stage6_029, stage6_047","high, medium",No,none,hardneg_conf_min_50,0.721,0.068,0.76,0.262,0.777,0.201
+f3054230,"stage6_057, stage6_069, stage6_081",high,Yes,none,hardneg_conf_min_99,0.709,0.034,0.835,0.178,0.665,0.198
+102d220d,"stage6_056, stage6_068, stage6_080",high,Yes,none,hardneg_conf_min_50,0.669,0.058,0.814,0.317,0.688,0.274
+58defcb5,"stage6_055, stage6_067, stage6_079",high,Yes,none,none,0.649,0.009,0.802,0.288,0.663,0.292

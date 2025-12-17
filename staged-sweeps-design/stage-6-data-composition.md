@@ -62,3 +62,7 @@ Stage 6 systematically tested the impact of curated data subsets on model perfor
 
 
 ### Results
+
+full overview:<br>
+
+{% file src="../.gitbook/assets/Stage_6_leaderboard_table.csv" %}
