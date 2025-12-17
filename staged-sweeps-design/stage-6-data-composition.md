@@ -30,7 +30,14 @@ Stage 6 systematically tested the impact of curated data subsets on model perfor
 
 #### Base Config <a href="#sweep-parameters" id="sweep-parameters"></a>
 
-* **Validation**: false (Stage 6 style)
+* **Validation**: False&#x20;
+* **Mixup**: True
+* **Label Smoothing**: true
+* **Dropout**: 0.25
+* **Focal Loss:** False
+* **Learning Rate**: 0.0005
+
+
 
 
 
