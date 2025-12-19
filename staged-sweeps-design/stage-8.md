@@ -8,8 +8,11 @@ This was just testing the version that appends labeles - so searched for both bu
 this was tested to get an idea of how effective monitoring for both species at the same time could be. GIVE COMPARATIVE DATA HERE FROM SIMILAR RUNS.\
 this is also outsde the scope of the contract, as they call at separate times
 
-#### Stage 8 – OOD Performance Summary
+explain replace vs append, benefits
+
+#### Stage 8 – OOD Comparison to Identical Config with replace mode
 
 | Experiments                           | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
 | ------------------------------------- | ------------------- | -------------------------- | ----------------------- |
 | stage8\_001, stage8\_002, stage8\_003 | 0.745 ± 0.015       | 0.929 ± 0.036              | 0.622 ± 0.007           |
+| stage6\_001, stage6\_019, stage6\_037 | 0.837 ± 0.141       | 0.855 ± 0.137              | 0.836 ± 0.189           |
