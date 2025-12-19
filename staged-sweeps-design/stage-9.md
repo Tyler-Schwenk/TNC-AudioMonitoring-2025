@@ -5,6 +5,16 @@ This was where i ttempted using my custom validation set instead of the birdnet 
 and swept all subsets. \
 as described here:<br>
 
+Validation true = using my custom validation set that was held out:
+
+* 15% of date blocks were held out from each recorder/site for hyperparameter tuning and threshold selection.  (647 positives, 2602 negatives)&#x20;
+
+Validation False = using birdnet default validation set
+
+* 20% randomly selected from trainging data
+
+
+
 ### Experimental Design <a href="#experimental-design" id="experimental-design"></a>
 
 #### Sweep Parameters <a href="#sweep-parameters" id="sweep-parameters"></a>
@@ -13,12 +23,12 @@ as described here:<br>
 * **Validation**: True & False
 * **Positive Subsets**:
   * small (+51 files from bestLowQuality)
-  * medium (+51 files from bestLowQuality)
-  * large (+51 files from bestLowQuality)
+  * medium (+154 files from bestLowQuality)
+  * large (+309 files from bestLowQuality)
   * extra large (+515 files from bestLowQuality)
 * **Negative Subsets**:
-  * None (baseline: 8,525 files)
   * hardneg\_conf\_min\_50 (+1,401 hard negatives at 50% confidence)
+  * hardneg\_conf\_min\_85 (+899 hard negatives at 85% confidence)
   * hardneg\_conf\_min\_99 (+475 hard negatives at 99% confidence)
 
 #### Base Config <a href="#sweep-parameters" id="sweep-parameters"></a>
