@@ -11,7 +11,7 @@
     * [\[Archive\] Stage 3 - Data Balancing Sweep](staged-sweeps-design/error-found-in-evaluation/archive-stage-3-data-balancing-sweep.md)
     * [\[Archive\] Stage 4 - Data quality distributions](staged-sweeps-design/error-found-in-evaluation/archive-stage-4-data-quality-distributions.md)
   * [Stage 5 - Curated Data Subset Addition](staged-sweeps-design/stage-5-curated-data-subset-addition.md)
-  * [Stage 6: Data Composition](staged-sweeps-design/stage-6-data-composition.md)
+  * [Stage 6 - Data Composition](staged-sweeps-design/stage-6-data-composition.md)
   * [Stage 7 - Focus on specific call type](staged-sweeps-design/stage-7.md)
   * [Stage 8 - Appended label](staged-sweeps-design/stage-8.md)
   * [Stage 9 - Custom Validation Set](staged-sweeps-design/stage-9.md)
