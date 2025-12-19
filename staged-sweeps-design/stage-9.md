@@ -11,7 +11,7 @@ Validation true = using my custom validation set that was held out:
 
 Validation False = using birdnet default validation set
 
-* 20% randomly selected from trainging data
+* 20% randomly selected from training data
 
 
 
