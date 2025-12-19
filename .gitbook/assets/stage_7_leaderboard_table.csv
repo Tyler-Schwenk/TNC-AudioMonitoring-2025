@@ -1,0 +1,5 @@
+Signature,Experiments,Balance,Call Type,ood.f1__mean,ood.f1__std,ood.precision__mean,ood.precision__std,ood.recall__mean,ood.recall__std
+0e5c2824,"stage7_001, stage7_005, stage7_009",Yes,"grunt, growl, both",0.778,0.045,0.899,0.063,0.695,0.111
+b8c61cb2,"stage7_002, stage7_006, stage7_010",Yes,"grunt, both",0.754,0.035,0.874,0.042,0.669,0.08
+27028673,"stage7_003, stage7_007, stage7_011",No,"grunt, growl, both",0.756,0.047,0.833,0.111,0.717,0.145
+22639032,"stage7_004, stage7_008, stage7_012",No,"grunt, both",0.708,0.009,0.983,0.022,0.554,0.013
