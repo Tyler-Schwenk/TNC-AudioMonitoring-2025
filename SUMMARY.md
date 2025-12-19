@@ -15,8 +15,6 @@
   * [Stage 7 - Focus on specific call type](staged-sweeps-design/stage-7.md)
   * [Stage 8 - Appended label](staged-sweeps-design/stage-8.md)
   * [Stage 9 - Custom Validation Set](staged-sweeps-design/stage-9.md)
-  * [Stage 10](staged-sweeps-design/stage-10.md)
-  * [Stage 11](staged-sweeps-design/stage-11.md)
   * [Stage 12](staged-sweeps-design/stage-12.md)
   * [Stage 13 - Hyperparameter fine-tuning](staged-sweeps-design/stage-13-hyperparameter-fine-tuning.md)
   * [Stage 14 - Sensitivity & Stability](staged-sweeps-design/stage-14-sensitivity-and-stability.md)
