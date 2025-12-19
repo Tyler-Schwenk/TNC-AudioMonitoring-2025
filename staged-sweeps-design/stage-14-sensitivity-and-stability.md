@@ -1,5 +1,12 @@
 # Stage 14 - Sensitivity & Stability
 
+#### **taking:**&#x20;
+
+**learning rate: 0.001**
+
+**dropout: 0.25**\
+**hidden units: 1024**<br>
+
 #### **Phase 3: Sensitivity & Threshold Optimization** (2-3 days)
 
 For the best config from Phase 2:
