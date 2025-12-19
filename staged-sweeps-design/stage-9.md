@@ -5,6 +5,32 @@ This was where i ttempted using my custom validation set instead of the birdnet 
 and swept all subsets. \
 as described here:<br>
 
+### Experimental Design <a href="#experimental-design" id="experimental-design"></a>
+
+#### Sweep Parameters <a href="#sweep-parameters" id="sweep-parameters"></a>
+
+* **Seeds**: 3 (123, 456, 789) for reproducibility testing
+* **Validation**: True & False
+* **Positive Subsets**:
+  * small (+51 files from bestLowQuality)
+  * medium (+51 files from bestLowQuality)
+  * large (+51 files from bestLowQuality)
+  * extra large (+515 files from bestLowQuality)
+* **Negative Subsets**:
+  * None (baseline: 8,525 files)
+  * hardneg\_conf\_min\_50 (+1,401 hard negatives at 50% confidence)
+  * hardneg\_conf\_min\_99 (+475 hard negatives at 99% confidence)
+
+#### Base Config <a href="#sweep-parameters" id="sweep-parameters"></a>
+
+* **Quality**: \[High, Medium]
+* **Balance**: true
+* **Mixup**: True
+* **Label Smoothing**: true
+* **Dropout**: 0.25
+* **Focal Loss:** False
+* **Learning Rate**: 0.0005
+
 ```yaml
 stage: 9
 out_dir: config/sweeps/stage9_sweep
@@ -48,3 +74,4 @@ base_params:
 
 ```
 
+{% file src="../.gitbook/assets/Stage_9_leaderboard_table.csv" %}
