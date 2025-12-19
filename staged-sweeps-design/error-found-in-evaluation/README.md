@@ -4,7 +4,7 @@ description: 10/28/2025
 
 # --Error found in Evaluation--
 
-After the third stage of sweeps, an error was found in the post-inference evaluation script that resulted in our models appearing to be performing worse than reality. After discovering the error, all models were reevaluated with the correct logic. This showed us that our models were performing better than expected, but our understanding of how our hyperparameters effected model performance needed to be reevaluated. Below is a description of the error and how it effected the data.
+After the fourth stage of sweeps, an error was found in the post-inference evaluation script that resulted in our models appearing to be performing worse than reality. After discovering the error, all models were reevaluated with the correct logic. This showed us that our models were performing better than expected, but our understanding of how our hyperparameters effected model performance needed to be reevaluated. Below is a description of the error and how it effected the data.
 
 ### Problem:
 
@@ -27,10 +27,6 @@ The evaluation pipeline aggregated at the wrong granularity. The ground truth is
 
 Below is are the full evaluation metrics for all experiments from before and after they were reevaluated.
 
-{% file src="../../.gitbook/assets/all_experiments.csv" %}
-
-{% file src="../../.gitbook/assets/all_experiments_new.csv" %}
-
 #### Performance Change Overview
 
 | Stage       | Old F1 | New F1 | Δ F1      | Old Precision | New Precision | Δ P       | Old Recall | New Recall | Δ R       |
@@ -39,3 +35,7 @@ Below is are the full evaluation metrics for all experiments from before and aft
 | **Stage 2** | 0.51   | 0.82   | **+0.31** | 0.58          | 0.75          | **+0.18** | 0.55       | 0.93       | **+0.38** |
 | **Stage 3** | 0.60   | 0.72   | **+0.12** | 0.77          | 0.86          | **+0.09** | 0.61       | 0.71       | **+0.10** |
 | **Stage 4** | 0.64   | 0.76   | **+0.12** | 0.70          | 0.80          | **+0.10** | 0.71       | 0.81       | **+0.10** |
+
+{% file src="../../.gitbook/assets/all_experiments.csv" %}
+
+{% file src="../../.gitbook/assets/all_experiments_new.csv" %}

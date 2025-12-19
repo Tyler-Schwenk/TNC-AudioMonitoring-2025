@@ -1,4 +1,4 @@
-# Stage 4 - Data quality distributions
+# \[Archive] Stage 4 - Data quality distributions
 
 #### Objective
 
@@ -51,9 +51,9 @@ Top-performing Stage 4 configurations (mean ± SD over three seeds)
   * **Negatives**: 7,887
 * Training on only high quality data had the effect of bringing slightly reduced mean f1, and precision - but at a tighter standard deviation across runs.
 
-<figure><img src="../.gitbook/assets/F1_quality_balanced_dots (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/F1_quality_balanced_dots (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Precision_quality_balanced_dots.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Precision_quality_balanced_dots.png" alt=""><figcaption></figcaption></figure>
 
 ### Balancing (pos/neg)
 
@@ -65,7 +65,7 @@ Balancing the amount of negative samples to be in line with positive samples did
 * Mix-up and Label-smoothing were used for all runs - helping regulate gradient bias from imbalance.
 * The data imbalance ratio was only \~ 1 : 1.8 - which is not extreme to begin with.
 
-<figure><img src="../.gitbook/assets/G1_balancing_across_quality.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/G1_balancing_across_quality.png" alt=""><figcaption></figcaption></figure>
 
 ### Upsampling
 
