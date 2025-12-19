@@ -6,6 +6,10 @@ description: >-
 
 # Previous model
 
+
+
+below is the model traine don our new larger set of data curated for the 2025 model development season. This larger test set of data gave us improved insight into the performance of the previous model. key take aways include its poor generalization to new sets of data, and its reliance on recall as the cost of precision.
+
 model file: [https://huggingface.co/TylerSchwenk/Rana-Draytonii-Detection/tree/main](https://huggingface.co/TylerSchwenk/Rana-Draytonii-Detection/tree/main)
 
 Key setup
