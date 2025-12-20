@@ -2,6 +2,7 @@
 
 * [Project Overview — Rana draytonii (CRLF) BirdNET Training](README.md)
 * [NOTES TO SELF](notes-to-self.md)
+* [Introduction](introduction.md)
 * [Audio Data Split Design](audio-data-split-design.md)
 * [Staged Sweeps Design](staged-sweeps-design/README.md)
   * [Previous model](staged-sweeps-design/previous-model.md)
