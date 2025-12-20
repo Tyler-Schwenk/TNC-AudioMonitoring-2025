@@ -23,16 +23,6 @@ To ensure reliable training and robust evaluation of the _Rana draytonii_ (Calif
 * **Precision-Oriented:** By retaining a large negative pool in val/test, evaluation directly stresses the model’s ability to avoid false positives.
 * **Reproducibility:** Splits are deterministic (stable hash), ensuring the same assignments every run.
 
-#### Best-Practice Alignment
-
-✔️ OOD site held out\
-✔️ IID test with temporal separation\
-✔️ Sufficient validation size\
-✔️ Balanced representation across quality and call type\
-✔️ Deterministic, reproducible, and locked for the remainder of the project
-
-We recommend **locking this split in stone**. Train and validate only with the `train/` and `val/` folders. Reserve both `test_iid/` and `test_ood/` exclusively for reporting and performance metrics.
-
 ***
 
 ### Detailed Data Breakdown
@@ -72,21 +62,6 @@ Below is the specific distribution of audio clips by split. Counts reflect the n
 
 ***
 
-#### By Dataset
-
-OldData refers to a subset of the dataset used for the training of the 2024 model, which was utilized again in the training of this model. All OldData was from the Rancho Meling site.
-
-| Split    | OldData (Pos/Neg) | NewData (Pos/Neg) |
-| -------- | ----------------- | ----------------- |
-| Train    | 381 / 4,347       | 3,204 / 4,178     |
-| Val      | 40 / 1,181        | 607 / 1,421       |
-| Test-IID | 1,523 / 38        | 441 / 941         |
-| Test-OOD | 1,691 / 1,894     | —                 |
-
-***
-
-#### By Recorder/Site -TODO add photos here!
-
 #### By Recorder / Site
 
 * **OOD (Sylvan Pond)** — _Moth11 + Moth12_
@@ -97,10 +72,10 @@ OldData refers to a subset of the dataset used for the training of the 2024 mode
   * Positives: 2,765 (train) + 547 (val) + 406 (test\_iid) = **3,718**
   * Negatives: 2,731 (train) + 1,110 (val) + 4 (test\_iid) = **3,845**
   * ➝ Largest single contributor outside OOD, well-balanced across splits.
-* **Rancho Meling (OldData, Moth13)**
+* **Rancho Meling (Moth13)**
   * Positives: 381 (train) + 40 (val) + 1,523 (test\_iid) = **1,944**
   * Negatives: 4,347 (train) + 1,181 (val) + 38 (test\_iid) = **5,566**
-  * ➝ Legacy dataset provides substantial negatives and positives across all splits.
+  * ➝ This data is from the source site in Baja California, Mexico.
 * **Wheatley Pond / Stream (Moths 01–07, 09–10)**
   * _Moth01:_ 31 pos (train) + 31 pos (val) + 7 pos (test\_iid) = **69 pos**
   * _Moth02:_ 2 pos (train) + 2 pos (val) + 1 pos (test\_iid) = **5 pos**
@@ -111,6 +86,14 @@ OldData refers to a subset of the dataset used for the training of the 2024 mode
   * _Moth09:_ 246 neg (train), 93 neg (val), 200 neg (test\_iid) = **539 neg**
   * _Moth10:_ 57 neg (val), 631 neg (test\_iid) = **688 neg**
   * ➝ Smaller contributions relative to Cole Creek and Rancho Meling, but they ensure representation from diverse devices and sites across splits.
+
+<figure><img src=".gitbook/assets/site locations (1).jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/SRP.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/Wheatley.jpg" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
