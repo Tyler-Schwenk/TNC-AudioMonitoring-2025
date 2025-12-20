@@ -64,14 +64,22 @@ ALL THESE GRAPHS WILL NEED TO BE UPDATED
 
 Dropout:
 
+<figure><img src="../.gitbook/assets/chart_Dropout_OOD_F1.png" alt="" width="360"><figcaption></figcaption></figure>
 
 
-<figure><img src="../.gitbook/assets/chart_Dropout_OOD_F1.svg" alt=""><figcaption></figcaption></figure>
 
 Hidden units:<br>
 
-<figure><img src="../.gitbook/assets/chart_Hidden_Units_OOD_F1 (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/chart_Hidden_Units_OOD_F1 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 full results:
+
+{% file src="../.gitbook/assets/stage_13_leaderboard_table (1).csv" %}
+
+**We will carry forward:**\
+**learning rate: 0.001**
+
+**dropout: 0.25**\
+**hidden units: 1024**
