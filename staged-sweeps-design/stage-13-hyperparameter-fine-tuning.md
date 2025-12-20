@@ -30,7 +30,7 @@ taking the best config from all of the runs - stage 9\_006, and running with it.
 
 ### Dropout
 
-There was a clear trend of increased precision and stability across seeds as dropout increased, but this was countered with a decrease of recall. For this reason a dropout of 0.25 was selected for its slight increase of precision and stability, without a major sacrifice of recall.
+There was a clear trend of increased precision and stability across seeds as dropout increased, but this was countered with a decrease of recall. For this reason a dropout of 0.25 will be selected for its slight increase of precision and stability, without a major sacrifice of recall.
 
 <figure><img src="../.gitbook/assets/chart_Dropout_OOD_F1.png" alt="" width="360"><figcaption></figcaption></figure>
 
@@ -38,7 +38,9 @@ There was a clear trend of increased precision and stability across seeds as dro
 
 <figure><img src="../.gitbook/assets/chart_Dropout_OOD_RECALL.png" alt="" width="360"><figcaption></figcaption></figure>
 
-Learning Rate:
+### Learning Rate
+
+
 
 <figure><img src="../.gitbook/assets/chart_Learning_Rate_OOD_F1 (1).png" alt="" width="360"><figcaption></figcaption></figure>
 
