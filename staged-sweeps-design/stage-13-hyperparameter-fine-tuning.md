@@ -40,15 +40,27 @@ There was a clear trend of increased precision and stability across seeds as dro
 
 ### Learning Rate
 
-
-
-<figure><img src="../.gitbook/assets/chart_Learning_Rate_OOD_F1 (1).png" alt="" width="360"><figcaption></figcaption></figure>
+This graph shows the F1 of different learning rate values, at Dropout = 0.25
 
 
 
-Hidden units:<br>
+<figure><img src="../.gitbook/assets/chart_Learning_Rate_OOD_F1 (2).png" alt="" width="360"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/chart_Hidden_Units_OOD_F1 (1).png" alt="" width="360"><figcaption></figcaption></figure>
+
+
+### Hidden units
+
+512 will be used for its increased stability, and avoiding risk of potential overfitting in higher hidden units
+
+<figure><img src="../.gitbook/assets/chart_Hidden_Units_OOD_F1 (2).png" alt="" width="360"><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../.gitbook/assets/chart_Hidden_Units_OOD_F1 (3).png" alt="" width="360"><figcaption></figcaption></figure>
+
+
+
+
 
 
 
