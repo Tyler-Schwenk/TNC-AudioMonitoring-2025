@@ -1,5 +1,11 @@
 # Audio Data Split Design
 
+### Data Preparation
+
+All audio clips were preprocessed into 3-second windows at 48 kHz, mono... etc
+
+each clip was manually reviewed to confirm presence/absence of&#x20;
+
 ### General Analysis
 
 To ensure reliable training and robust evaluation of the _Rana draytonii_ (California red-legged frog) acoustic classifier, we established a **fixed data split strategy**.&#x20;
