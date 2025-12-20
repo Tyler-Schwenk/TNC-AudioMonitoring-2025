@@ -1,6 +1,8 @@
 # Stage 13 - Hyperparameter fine-tuning
 
-taking the best config from all of the runs - stage 9\_006, and running with it. sweeping across all hyperparameters
+### Goal
+
+With training data finalized, the goal of this sweep was to take a second pass at the hyperparameters to ensure the best configuration, as it may have changed from our initial setup .
 
 ### Experimental Design <a href="#experimental-design" id="experimental-design"></a>
 
