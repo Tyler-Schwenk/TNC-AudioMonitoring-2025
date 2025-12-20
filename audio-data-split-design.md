@@ -74,6 +74,8 @@ Below is the specific distribution of audio clips by split. Counts reflect the n
 
 #### By Dataset
 
+OldData refers to a subset of the dataset used for the training of the 2024 model, which was utilized again in the training of this model. All OldData was from the Rancho Meling site.
+
 | Split    | OldData (Pos/Neg) | NewData (Pos/Neg) |
 | -------- | ----------------- | ----------------- |
 | Train    | 381 / 4,347       | 3,204 / 4,178     |
@@ -112,14 +114,6 @@ Below is the specific distribution of audio clips by split. Counts reflect the n
 
 ***
 
-#### Notes
-
-* Unknown dates were assigned to **train** only, avoiding leakage.
-* Full data manifest can be found here:
+Full data manifest can be found here:
 
 {% file src=".gitbook/assets/manifest.csv" %}
-
-***
-
-✅ **Conclusion:**\
-This split is **best-practice aligned**, ensures robust evaluation, and maximizes the value of your data for training a high-precision CRLF model. It should now be fixed for the duration of the project. Use `train/` + `val/` for model refinement, and reserve both test sets (`test_iid/`, `test_ood/`) for evaluation and reporting.
