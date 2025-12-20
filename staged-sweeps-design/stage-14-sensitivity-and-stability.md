@@ -1,5 +1,10 @@
 # Stage 14 - Sensitivity & Stability
 
+### **Goal:**
+
+* Determine final configuration values for sensitivity for end user
+* Determine final metrics at those values with inreased confidence, due to the igh amount of seeds.
+
 #### **taking:**&#x20;
 
 **learning rate: 0.001**
