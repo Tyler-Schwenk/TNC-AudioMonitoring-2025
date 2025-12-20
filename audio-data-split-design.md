@@ -1,18 +1,12 @@
----
-description: >-
-  THIS ONE MAY BE WRONG - MAYBE JUST COPY OVER THE IMAGES AND STUFF TO
-  DESCRIPTION IN SWEEPS
----
-
 # Audio Data Split Design
 
 ### General Analysis
 
-To ensure reliable training and robust evaluation of the _Rana draytonii_ (California red-legged frog) acoustic classifier, we established a **fixed data split strategy**. This split design follows machine learning best practices and conservation monitoring needs:
+To ensure reliable training and robust evaluation of the _Rana draytonii_ (California red-legged frog) acoustic classifier, we established a **fixed data split strategy**.&#x20;
 
 * **Out-of-Distribution (OOD) Test — Sylvan Pond (Moth11 + Moth12):**\
   All audio from Sylvan Pond was held out as a **site-exclusive test set**. This ensures that model evaluation includes a “different site” condition, capturing domain shift effects (e.g., background acoustics unique to Sylvan).\
-  → This provides a strict measure of real-world generalization.
+  → This provides a strict measure of real-world generalization. ()
 * **In-Distribution (IID) Test (8% of date blocks):**\
   Dates were deterministically selected from each recorder and site (excluding Sylvan). This guarantees that evaluation clips come from **different days** than training, preventing temporal leakage while still being from the same environments.\
   → Provides a fair estimate of performance under conditions similar to training.
