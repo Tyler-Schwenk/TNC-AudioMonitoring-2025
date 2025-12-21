@@ -10,3 +10,5 @@
   * hardneg\_conf\_min\_50 (+1,401 hard negatives at 50% confidence)
   * hardneg\_conf\_min\_85 (+981 hard negatives at 85% confidence)
   * hardneg\_conf\_min\_99 (+475 hard negatives at 99% confidence)
+
+**how the heck are we computing metrics? for deciding precision, do we take a minimunm confidence threshold? how doe sthis relate to sensitivity?**&#x20;

@@ -20,7 +20,7 @@
   * [Stage 13 - Hyperparameter fine-tuning](staged-sweeps-design/stage-13-hyperparameter-fine-tuning.md)
   * [Stage 14 - Sensitivity & Stability](staged-sweeps-design/stage-14-sensitivity-and-stability.md)
   * [future ideas](staged-sweeps-design/future-ideas.md)
-* [other methedologies explored](other-methedologies-explored.md)
+* [other methodologies explored](other-methodologies-explored.md)
 * [Best model results](results-overview.md)
 * [Environmental Impact](environmental-impact.md)
 * [Setup/workflow](setup-workflow.md)
