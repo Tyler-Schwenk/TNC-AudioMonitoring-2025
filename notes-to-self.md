@@ -12,3 +12,5 @@
   * hardneg\_conf\_min\_99 (+475 hard negatives at 99% confidence)
 
 **how the heck are we computing metrics? for deciding precision, do we take a minimunm confidence threshold? how doe sthis relate to sensitivity?**&#x20;
+
+**should we use stage14\_013, sinc eit scores 100% across all metrics? is this real performance? is it overfit? how do we know?**
