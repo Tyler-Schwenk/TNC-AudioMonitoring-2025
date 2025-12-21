@@ -13,4 +13,37 @@
 
 **how the heck are we computing metrics? for deciding precision, do we take a minimunm confidence threshold? how doe sthis relate to sensitivity?**&#x20;
 
+### **Evaluation Logic - Concise Summary**
+
+#### **How it works:**
+
+1. **Per-file scoring**: Each audio file gets ONE score = max RADR confidence across all detections
+2. **No minimum confidence**: Even 0.01 counts if it's the highest RADR detection
+3. **Negative predictions ignored**: Only looks at RADR detections, not other species
+4. **Threshold sweep**: Tests 21 thresholds (0.0, 0.05, 0.10, ..., 1.0) to find best F1
+
+#### **Code snippet:**
+
+```python
+# From evaluate_results.py line 197-201
+radr = df[df["Scientific name"] == "RADR"].groupby("File")["Confidence"].max()
+files = files.merge(radr.rename("score"), on="File", how="left")
+files["score"] = files["score"].fillna(0.0)  # No RADR detection = 0.0
+```
+
+
+
+#### **Example:**
+
+* File has RADR detections: \[0.03, 0.12, 0.85] → **Score = 0.85**
+* File has no RADR detections → **Score = 0.0**
+* At threshold 0.5: score ≥ 0.5 → predicted positive
+* "best\_f1" = whichever threshold (0.0-1.0) gives highest F1
+
+#### **Key takeaway:**
+
+Any RADR detection, no matter how low, contributes to the file score. There's no confidence filtering before evaluation.
+
+
+
 **should we use stage14\_013, sinc eit scores 100% across all metrics? is this real performance? is it overfit? how do we know?**
