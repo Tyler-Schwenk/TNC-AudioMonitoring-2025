@@ -46,4 +46,33 @@ Any RADR detection, no matter how low, contributes to the file score. There's no
 
 
 
-**should we use stage14\_013, sinc eit scores 100% across all metrics? is this real performance? is it overfit? how do we know?**
+**THEBIG BUG:**\
+**The Bug:**
+
+1. BirdNET only outputs CSV rows for files where it detects **ANY species above the confidence threshold**
+2. If a file has NO detections above threshold → **BirdNET outputs NOTHING** for that file (no row at all)
+3. The old evaluation code only processed files **present in BirdNET output**
+4. Files missing from BirdNET output = **never evaluated at all**
+
+**Real-world example (stage14\_013):**
+
+* Test set: 3,585 files (1,691 RADR positive, 1,894 negative)
+* BirdNET output: Only 888 files (all positive)
+* **Missing: 2,697 files** (803 positives + 1,894 negatives)
+  * The model detected RADR in 888 positive files
+  * For the other 2,697 files: **no detections above confidence threshold** → no output row
+
+**This is DIFFERENT from predicting "Negative":**
+
+* **Predicting "Negative"** = model outputs "Negative" class → BirdNET writes a row
+* **No detection** = model finds nothing above min\_conf → BirdNET writes NO row
+
+**Why stage14\_013 was so broken:**
+
+* Model only outputs RADR predictions, never "Negative"
+* Conservative model: only confident on actual RADRs
+* For negatives: no detection above threshold → no BirdNET output row
+* Old evaluation: missing files ignored → metrics looked perfect (F1=0.992)
+* Fixed evaluation: missing files scored as 0.0 → correct metrics (F1=0.681)
+
+So yes - files with no prediction whatsoever weren't counted at all in the old evaluation! 🎯
