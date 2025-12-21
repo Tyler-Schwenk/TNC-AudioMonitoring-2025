@@ -6,6 +6,17 @@ description: >-
 
 # Previous model
 
+NEW DATA<br>
+
+| Experiments                                        | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) | IID F1 (mean ± std) | IID Precision (mean ± std) | IID Recall (mean ± std) |
+| -------------------------------------------------- | ------------------- | -------------------------- | ----------------------- | ------------------- | -------------------------- | ----------------------- |
+| 000\_OldModel2024\_baseline\_mc25\_sens50\_seed01  | 0.691 ± 0.000       | 0.528 ± 0.000              | 1.000 ± 0.000           | 0.866 ± 0.000       | 0.764 ± 0.000              | 1.000 ± 0.000           |
+| 000\_OldModel2024\_baseline\_mc25\_sens100\_seed01 | 0.675 ± 0.000       | 0.509 ± 0.000              | 1.000 ± 0.000           | 0.847 ± 0.000       | 0.734 ± 0.000              | 1.000 ± 0.000           |
+
+***
+
+
+
 
 
 below is the model traine don our new larger set of data curated for the 2025 model development season. This larger test set of data gave us improved insight into the performance of the previous model. key take aways include its poor generalization to new sets of data, and its reliance on recall as the cost of precision.
