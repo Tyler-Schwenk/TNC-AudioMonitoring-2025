@@ -1,11 +1,5 @@
 # Validation Set
 
-## Validation set
-
-my custom validation st includes 15% of dates held out from each recorder for use in the BirdNET pipelien using their X training flag (647 positives, 2602 negatives).
-
-Wen not using the custom validation set (validation = false), birdnet will use 20% <- \[TODO CHECK THIS] of the training set of data, INCLUDE BIRDNE DEFINITION.
-
 ### Results
 
 Including the validation set showed improvement on unbalanced datasets. below are results from experiments run wit \[high,medium,low] quality data, no balancing, swept across validation sets
