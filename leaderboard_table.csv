@@ -1,0 +1,9 @@
+Signature,Experiments,Balance,Use Validation,Mixup,Label Smoothing,ood.f1__mean,ood.f1__std,ood.precision__mean,ood.precision__std,ood.recall__mean,ood.recall__std
+9bfc858c,"stage16_012, stage16_028, stage16_044",No,True,No,Yes,0.864,0.036,0.833,0.1,0.908,0.053
+7e00e17d,"stage16_010, stage16_026, stage16_042",No,True,Yes,Yes,0.824,0.026,0.74,0.078,0.941,0.06
+c74e0666,"stage16_016, stage16_032, stage16_048",No,True,No,No,0.831,0.081,0.784,0.175,0.915,0.077
+b23c3803,"stage16_014, stage16_030, stage16_046",No,True,Yes,No,0.811,0.055,0.717,0.135,0.956,0.07
+4ac3abb2,"stage16_013, stage16_029, stage16_045",No,False,Yes,No,0.815,0.109,0.736,0.194,0.952,0.059
+58209b07,"stage16_011, stage16_027, stage16_043",No,False,No,Yes,0.776,0.032,0.639,0.044,0.993,0.005
+129203e5,"stage16_009, stage16_025, stage16_041",No,False,Yes,Yes,0.77,0.041,0.71,0.196,0.906,0.159
+8d1d706c,"stage16_015, stage16_031, stage16_047",No,False,No,No,0.752,0.028,0.604,0.038,0.999,0.002

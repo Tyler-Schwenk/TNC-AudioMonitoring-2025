@@ -2,6 +2,12 @@
 
 ### Data Preparation
 
+Data came from deployments form these years, in these locations. from two diferent recorders (audio moth, sonmeter pro) - link to these.
+
+talk about how i split them, why, preprocessed, then reviewed all X amount of files manually.
+
+total: 21,887 files (7,887 poitive, 14,000 negative)
+
 All audio clips were preprocessed into 3-second windows at 48 kHz, mono... etc
 
 each clip was manually reviewed to confirm presence/absence of&#x20;
