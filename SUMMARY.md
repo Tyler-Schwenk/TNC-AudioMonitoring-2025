@@ -34,3 +34,7 @@
     * [Validation Set](parameter-effects/datasets/validation-set.md)
     * [Balancing](parameter-effects/datasets/balancing.md)
     * [Datasets & Subsets](parameter-effects/datasets-and-subsets.md)
+  * [Hyperparameters](parameter-effects/hyperparameters/README.md)
+    * [Hidden Units](parameter-effects/hyperparameters/hidden-units.md)
+    * [Learning Rate](parameter-effects/hyperparameters/learning-rate.md)
+    * [Dropout](parameter-effects/hyperparameters/dropout.md)
