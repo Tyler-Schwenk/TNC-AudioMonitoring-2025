@@ -26,4 +26,6 @@
 * [Environmental Impact](environmental-impact.md)
 * [Setup/workflow](setup-workflow.md)
 * [Looking Forward](looking-forward.md)
-* [Parameter Effects](parameter-effects.md)
+* [Parameter Effects](parameter-effects/README.md)
+  * [Datasets](parameter-effects/datasets.md)
+  * [Datasets & Subsets](parameter-effects/datasets-and-subsets.md)
