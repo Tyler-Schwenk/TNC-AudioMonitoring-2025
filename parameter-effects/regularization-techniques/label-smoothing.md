@@ -6,7 +6,6 @@
 
 * All experiments using \[high, medium, low] data
 * Swept across Validation (True/False), and Balance (True/False)
-* **Average Effect:** +2.1 F1 points
 
 ### Label Smoothing Effect by Configuration
 
