@@ -10,7 +10,7 @@
     * [Hard Negative Mining](parameter-effects/datasets/hard-negative-mining.md)
     * [Validation Set](parameter-effects/datasets/validation-set.md)
     * [Balancing](parameter-effects/datasets/balancing.md)
-  * [Regularization techniques](parameter-effects/regularization-techniques/README.md)
+  * [Regularization Techniques](parameter-effects/regularization-techniques/README.md)
     * [Label Smoothing](parameter-effects/regularization-techniques/label-smoothing.md)
     * [Mixup](parameter-effects/regularization-techniques/mixup.md)
   * [Hyperparameters](parameter-effects/hyperparameters/README.md)
