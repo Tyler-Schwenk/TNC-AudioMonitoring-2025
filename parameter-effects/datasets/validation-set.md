@@ -47,3 +47,7 @@ Validation selection improves mean OOD F1 in unbalanced configurations but degra
 | stage16\_006, stage16\_022, stage16\_038 | Yes     | True           | 0.752 ± 0.035       | 0.606 ± 0.047              | 0.997 ± 0.005           |
 | stage16\_008, stage16\_024, stage16\_040 | Yes     | True           | 0.748 ± 0.023       | 0.599 ± 0.030              | 0.997 ± 0.002           |
 | stage16\_004, stage16\_020, stage16\_036 | Yes     | True           | 0.740 ± 0.097       | 0.638 ± 0.192              | 0.939 ± 0.103           |
+
+{% hint style="info" %}
+Uses data from [stage 16](../../staged-sweeps-design/stage-16.md)
+{% endhint %}
