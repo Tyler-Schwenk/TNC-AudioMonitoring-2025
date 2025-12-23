@@ -42,7 +42,7 @@ When using only high-quality data with BirdNET's default validation:
 * Typically occurs with mixed-quality data and hard negatives
 
 {% hint style="info" %}
-Full data used below, containing data from [stage 6](../../staged-sweeps-design/stage-6-data-composition.md), [stage 12](../../staged-sweeps-design/stage-12.md), [stage 16](../../staged-sweeps-design/stage-16.md),&#x20;
+Full data used below, containing data from many different stages
 {% endhint %}
 
 {% file src="../../.gitbook/assets/balancing_comparison_data (1).csv" %}
