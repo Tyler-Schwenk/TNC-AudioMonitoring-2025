@@ -9,13 +9,12 @@ description: >-
 
 #### Overview
 
-Stage 3 investigated whether explicit upsampling of positive calls could improve recall or stability in the California Red-Legged Frog classifier.\
+Stage 3 investigated whether explicit upsampling of positive calls could improve recall or stability in the classifier.\
 At this point in the project, the training pipeline already enforced per-batch balance between positive and negative samples.\
 Thus, the Stage 3 experiments effectively tested the _marginal value of redundant upsampling_ on an already balanced dataset.
 
 Stage 3B extended the sweep with finer ratio increments and additional seeds.\
-Stage 3C explored potential interactions between upsampling, learning rate, and augmentation composition (label smoothing ± mixup).\
-All runs used the fixed BirdNET architecture and locked train/validation/test splits established earlier in the project, ensuring direct comparability.
+Stage 3C explored potential interactions between upsampling, learning rate, and augmentation composition (label smoothing ± mixup).
 
 ***
 
