@@ -1,0 +1,26 @@
+Comparison_Group,Split,Positive_Subsets,Use_Validation,Negative_Subsets,Experiments,N_Experiments,F1_Mean,F1_Std,Precision_Mean,Precision_Std,Recall_Mean,Recall_Std,Delta_F1_From_Baseline,Delta_Precision,Delta_Recall
+OOD_Comparison_1,OOD,large,False,hardneg_conf_min_50,"stage9_024, stage9_048, stage9_072",3,0.782,0.061,0.907,0.046,0.697,0.119,0.000,0.000,0.000
+OOD_Comparison_1,OOD,large,False,hardnet_conf_min_85,"stage9_022, stage9_046, stage9_070",3,0.833,0.032,0.839,0.018,0.828,0.048,0.051,-0.068,0.131
+OOD_Comparison_1,OOD,large,False,hardneg_conf_min_99,"stage9_023, stage9_047, stage9_071",3,0.774,0.022,0.944,0.012,0.656,0.037,-0.008,0.037,-0.041
+OOD_Comparison_2,OOD,medium,True,hardneg_conf_min_50,"stage9_009, stage9_033, stage9_057",3,0.810,0.029,0.910,0.049,0.736,0.079,0.000,0.000,0.000
+OOD_Comparison_2,OOD,medium,True,hardnet_conf_min_85,"stage9_007, stage9_031, stage9_055",3,0.793,0.054,0.948,0.028,0.683,0.072,-0.017,0.038,-0.053
+OOD_Comparison_2,OOD,medium,True,hardneg_conf_min_99,"stage9_008, stage9_032, stage9_056",3,0.762,0.040,0.845,0.063,0.706,0.114,-0.048,-0.065,-0.030
+OOD_Comparison_3,OOD,medium,False,hardneg_conf_min_50,"stage9_021, stage9_045, stage9_069",3,0.779,0.077,0.905,0.082,0.702,0.157,0.000,0.000,0.000
+OOD_Comparison_3,OOD,medium,False,hardnet_conf_min_85,"stage9_019, stage9_043, stage9_067",3,0.803,0.053,0.880,0.088,0.758,0.140,0.024,-0.025,0.056
+OOD_Comparison_3,OOD,medium,False,hardneg_conf_min_99,"stage9_020, stage9_044, stage9_068",3,0.735,0.016,0.958,0.011,0.597,0.020,-0.044,0.053,-0.105
+OOD_Comparison_4,OOD,top50,True,hardneg_conf_min_50,"stage9_003, stage9_027, stage9_051",3,0.776,0.032,0.939,0.067,0.669,0.084,0.000,0.000,0.000
+OOD_Comparison_4,OOD,top50,True,hardnet_conf_min_85,"stage9_001, stage9_025, stage9_049",3,0.794,0.029,0.916,0.045,0.702,0.039,0.018,-0.023,0.033
+OOD_Comparison_4,OOD,top50,True,hardneg_conf_min_99,"stage9_002, stage9_026, stage9_050",3,0.804,0.070,0.820,0.216,0.839,0.134,0.028,-0.119,0.170
+IID_Comparison_1,IID,large,False,hardneg_conf_min_50,"stage9_024, stage9_048, stage9_072",3,0.888,0.078,0.838,0.149,0.962,0.035,0.000,0.000,0.000
+IID_Comparison_1,IID,large,False,hardnet_conf_min_85,"stage9_022, stage9_046, stage9_070",3,0.925,0.019,0.924,0.013,0.927,0.044,0.037,0.086,-0.035
+IID_Comparison_1,IID,large,False,hardneg_conf_min_99,"stage9_023, stage9_047, stage9_071",3,0.865,0.020,0.958,0.025,0.789,0.020,-0.023,0.120,-0.173
+IID_Comparison_2,IID,top50,True,hardneg_conf_min_50,"stage9_003, stage9_027, stage9_051",3,0.845,0.036,0.968,0.036,0.755,0.080,0.000,0.000,0.000
+IID_Comparison_2,IID,top50,True,hardnet_conf_min_85,"stage9_001, stage9_025, stage9_049",3,0.884,0.037,0.923,0.062,0.848,0.024,0.039,-0.045,0.093
+IID_Comparison_2,IID,top50,True,hardneg_conf_min_99,"stage9_002, stage9_026, stage9_050",3,0.899,0.034,0.907,0.079,0.897,0.078,0.054,-0.061,0.142
+IID_Comparison_3,IID,top50,False,none,"stage6_007, stage6_025, stage6_043",3,0.850,0.056,0.881,0.185,0.860,0.138,0.000,0.000,0.000
+IID_Comparison_3,IID,top50,False,hardneg_conf_min_50,"stage6_008, stage6_026, stage6_044, stage9_015, stage9_039, stage9_063",6,0.865,0.042,0.880,0.115,0.871,0.108,0.015,-0.001,0.011
+IID_Comparison_3,IID,top50,False,hardnet_conf_min_85,"stage9_013, stage9_037, stage9_061",3,0.880,0.005,0.902,0.059,0.864,0.060,0.030,0.021,0.004
+IID_Comparison_3,IID,top50,False,hardneg_conf_min_99,"stage6_009, stage6_027, stage6_045, stage9_014, stage9_038, stage9_062",6,0.858,0.035,0.889,0.118,0.851,0.105,0.008,0.008,-0.009
+IID_Comparison_4,IID,medium,True,hardneg_conf_min_50,"stage9_009, stage9_033, stage9_057",3,0.888,0.054,0.935,0.025,0.847,0.078,0.000,0.000,0.000
+IID_Comparison_4,IID,medium,True,hardnet_conf_min_85,"stage9_007, stage9_031, stage9_055",3,0.853,0.058,0.881,0.185,0.863,0.131,-0.035,-0.054,0.016
+IID_Comparison_4,IID,medium,True,hardneg_conf_min_99,"stage9_008, stage9_032, stage9_056",3,0.842,0.022,0.877,0.022,0.812,0.053,-0.046,-0.058,-0.035
