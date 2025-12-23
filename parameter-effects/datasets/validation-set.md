@@ -1,10 +1,28 @@
 # Validation Set
 
-### Results
+### Overview
 
-Including the validation set showed improvement on unbalanced datasets. below are results from experiments run wit \[high,medium,low] quality data, no balancing, swept across validation sets
+Below are results from experiments run with \[high,medium,low] quality data, swept across validation sets and balancing. Validation = True uses my custom validation set, false uses the default BirdNET configuration of 20% of the training data.
 
-#### Stage 16 – OOD Performance Summary (Validation Usage Comparison)
+### Key metrics:
+
+With Balancing = False:
+
+* Validation True; OOD F1: 83.25, Std: 2.25&#x20;
+* Validation False; OOD F1: 77.82, Std: 2.65
+
+With balancing = True:&#x20;
+
+* Validation True; OOD F1: 76.35, Std: 3.40&#x20;
+* Validation False; OOD F1: 80.25, Std: 2.91
+
+Validation selection improves mean OOD F1 in unbalanced configurations but degrades OOD performance when class balancing is applied, indicating a strong interaction between validation usage and balancing. As a result, validation-based selection cannot be treated as a universally beneficial strategy over BirdNET's standard distribution for OOD generalization.
+
+***
+
+### Full Data Used
+
+#### OOD Performance Summary - No Balancing
 
 | Experiments                              | Balance | Use Validation | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
 | ---------------------------------------- | ------- | -------------- | ------------------- | -------------------------- | ----------------------- |
@@ -17,19 +35,7 @@ Including the validation set showed improvement on unbalanced datasets. below ar
 | stage16\_009, stage16\_025, stage16\_041 | No      | False          | 0.770 ± 0.041       | 0.710 ± 0.196              | 0.906 ± 0.159           |
 | stage16\_015, stage16\_031, stage16\_047 | No      | False          | 0.752 ± 0.028       | 0.604 ± 0.038              | 0.999 ± 0.002           |
 
-### Key metrics:
-
-Validation True; OOD F1: 83.25, Std: 2.25 Validation False; OOD F1: 77.82, Std: 2.65
-
-***
-
-With \[high,medium,low] quality data, balancing = true we got:&#x20;
-
-Validation True; OOD F1: 76.35, Std: 3.40 Validation False; OOD F1: 80.25, Std: 2.91
-
-This shows slightly better performance from the Standard birdNET selection, but not enough to be statistically significant given the standard deviation.
-
-#### Stage 16 – OOD Performance Summary (Balanced Configurations)
+#### OOD Performance Summary - With Balancing
 
 | Experiments                              | Balance | Use Validation | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
 | ---------------------------------------- | ------- | -------------- | ------------------- | -------------------------- | ----------------------- |
