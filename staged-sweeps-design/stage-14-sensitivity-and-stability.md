@@ -1,29 +1,67 @@
-# Stage 14 - Sensitivity & Stability
+# Stage 14 - Sensitivity Testing
 
-### **Goal:**
+### Experimental Design <a href="#experimental-design" id="experimental-design"></a>
 
-* Determine final configuration values for sensitivity for end user
-* Determine final metrics at those values with inreased confidence, due to the igh amount of seeds.
+#### Sweep Parameters <a href="#sweep-parameters" id="sweep-parameters"></a>
 
-#### **taking:**&#x20;
+* **Sensitivity**: 0.5, 0.75, 1.0, 1.25, 1.5
+* **Seed**: 123, 456, 789
 
-**learning rate: 0.001**
+#### Base Config <a href="#sweep-parameters" id="sweep-parameters"></a>
 
-**dropout: 0.25**\
-**hidden units: 1024**<br>
+* **Quality**: \[High, Medium]
+* **Positive Subset**: Small
+* **Negative Subset**: hardneg\_conf\_min\_50
+* **Validation**: True
+* **Balance**: True
+* **Mixup**: True
+* **Label Smoothing**: True
+* **Focal Loss:** False
+* **learning rate: 0.001**
+* **dropout: 0.25**
+* **hidden units: 512**
 
-#### **Phase 3: Sensitivity & Threshold Optimization** (2-3 days)
 
-For the best config from Phase 2:
 
-* Run inference at **sensitivity values**: \[0.5, 0.75, 1.0, 1.25, 1.5]
-* For each sensitivity, sweep **min\_conf thresholds**: \[0.1, 0.25, 0.5, 0.75, 0.9]
-* Plot precision vs recall curves to find your desired operating point
+```yaml
+stage: 14
+out_dir: config/sweeps/stage14_sweep
+axes:
+  seed:
+  - 123
+  - 456
+  - 789
+  hidden_units:
+  - 512
+  quality:
+  - - high
+    - medium
+  sensitivity:
+  - 0.5
+  - 0.75
+  - 1.0
+  - 1.25
+  - 1.5
+  balance:
+  - true
+  positive_subsets:
+  - - AudioData/curated/bestLowQuality/small
+  negative_subsets:
+  - - AudioData/curated/hardNeg/hardneg_conf_min_50
+base_params:
+  epochs: 50
+  upsampling_ratio: 0.0
+  mixup: true
+  label_smoothing: true
+  focal-loss: false
+  focal-loss-gamma: 2.0
+  focal-loss-alpha: 0.25
+  dropout: 0.25
+  learning_rate: 0.001
+  batch_size: 32
+  fmin: 0
+  fmax: 15000
+  overlap: 0.0
+  use_validation: true
 
-#### **Phase 4: Multi-seed Stability Test** (2-3 days)
-
-Train the final config with **10 seeds** to:
-
-* Measure precision/recall variance
-* Select the best-performing checkpoint
-* Have backup models if primary fails
+```
