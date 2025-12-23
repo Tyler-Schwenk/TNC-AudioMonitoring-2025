@@ -1,6 +1,6 @@
 # Balancing
 
-#### Key Finding #1: Balancing Dramatically Helps Mixed-Quality Data (+13.8 F1)
+#### Balancing Dramatically Helps Mixed-Quality Data (+13.8 F1)
 
 When using all quality levels (high/medium/low) with custom validation and hard negatives:
 
@@ -8,13 +8,13 @@ When using all quality levels (high/medium/low) with custom validation and hard 
 * **Unbalanced**: F1 = 0.680 (Precision 51.6%, Recall 100%)
 * **Effect**: Balancing prevents recall overfitting, gaining +21.6 precision points
 
-#### **Balancing Moderately Helps High+Medium Quality (+3.6 to +9.1 F1)**
+#### **Balancing Moderately Helps High+Medium Quality (+4.0 F1)**
 
 With high and medium quality data (10 controlled comparisons):
 
-* **Balanced**: F1 = 0.759 (Precision 90.1%, Recall 66.2%)
-* **Unbalanced**: F1 = 0.723 (Precision 93.1%, Recall 61.0%)
-* **Effect**: Balancing slightly helps overall performance
+* **Balanced**: F1 = 0.764 (Precision 87.8%, Recall 70.8%)
+* **Unbalanced**: F1 = 0.722 (Precision 77.7%, Recall 73.8%)
+* **Effect:** Balancing moderately helps overall performance, especially with added negative subsets
 
 #### Balancing Hurts High-Quality-Only Data (-10.2 F1)
 
@@ -32,8 +32,8 @@ When using only high-quality data with BirdNET's default validation:
 
 **Balancing Consistently:**
 
-* **Increases Precision:** +2.2 to +26.8 points across comparisons
-* **Decreases Recall:** -0.6 to -19.9 points across comparisons
+* **Increases Precision:** 65% of comparisons (+2.2 to +26.8 points)
+* **Decreases Recall:** 44% of comparisons (-0.6 to -19.9 points)
 * **Net F1 Effect:** Highly variable depending on context
 
 **When F1 Improves with Balancing:**
@@ -45,4 +45,4 @@ When using only high-quality data with BirdNET's default validation:
 Full data used below, containing data from [stage 6](../../staged-sweeps-design/stage-6-data-composition.md), [stage 12](../../staged-sweeps-design/stage-12.md), [stage 16](../../staged-sweeps-design/stage-16.md),&#x20;
 {% endhint %}
 
-{% file src="../../.gitbook/assets/balancing_comparison_data.csv" %}
+{% file src="../../.gitbook/assets/balancing_comparison_data (1).csv" %}
