@@ -1,20 +1,5 @@
 # Stage 9 - Custom Validation Set
 
-This was where i ttempted using my custom validation set instead of the birdnet default pulling 20 from my standard set.
-
-and swept all subsets. \
-as described here:<br>
-
-Validation true = using my custom validation set that was held out:
-
-* 15% of date blocks were held out from each recorder/site for hyperparameter tuning and threshold selection.  (647 positives, 2602 negatives)&#x20;
-
-Validation False = using birdnet default validation set
-
-* 20% randomly selected from training data
-
-
-
 ### Experimental Design <a href="#experimental-design" id="experimental-design"></a>
 
 #### Sweep Parameters <a href="#sweep-parameters" id="sweep-parameters"></a>
@@ -83,5 +68,7 @@ base_params:
   use_validation: false
 
 ```
+
+#### Results:
 
 {% file src="../.gitbook/assets/Stage_9_leaderboard_table.csv" %}
