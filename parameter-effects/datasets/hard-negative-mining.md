@@ -21,9 +21,7 @@ I then trained models with these different negative sets while holding all other
 
 ### Key Findings
 
-
-
-#### 2. The **85% hard negative threshold** consistently produced the best trade-off between learning and generalization.
+#### 1. The **85% hard negative threshold** consistently produced the best trade-off between learning and generalization.
 
 **OOD**&#x20;
 
