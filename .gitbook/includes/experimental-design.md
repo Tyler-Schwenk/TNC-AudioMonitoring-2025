@@ -8,7 +8,6 @@ title: Experimental Design
 
 * **Seeds**: 3 (123, 456, 789) for reproducibility testing
 * **Balance**: True/False (class balancing on/off)
-* **Quality levels**: 2 (\[high] only, \[high, medium, low]) - \*These were only swept with no positive subsets to avoid redundancy.
 * **Positive Subsets**:
   * None (baseline: 2,017 files)
   * small (+51 files from bestLowQuality)
@@ -21,6 +20,7 @@ title: Experimental Design
 ### Base Config <a href="#sweep-parameters" id="sweep-parameters"></a>
 
 * **Validation**: False&#x20;
+* **Quality**: \[high, medium]
 * **Mixup**: True
 * **Label Smoothing**: true
 * **Dropout**: 0.25
