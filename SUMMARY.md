@@ -17,6 +17,7 @@
     * [Dropout](parameter-effects/hyperparameters/dropout.md)
     * [Hidden Units](parameter-effects/hyperparameters/hidden-units.md)
     * [Learning Rate](parameter-effects/hyperparameters/learning-rate.md)
+  * [Imbalance Regularization](parameter-effects/imbalance-regularization.md)
   * [Sensitivity/Thesholds](parameter-effects/sensitivity-thesholds.md)
 * [Staged Sweeps Design](staged-sweeps-design/README.md)
   * [Previous model](staged-sweeps-design/previous-model.md)
