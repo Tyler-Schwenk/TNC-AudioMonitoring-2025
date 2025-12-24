@@ -21,8 +21,6 @@
 * **dropout: 0.25**
 * **hidden units: 512**
 
-
-
 ```yaml
 stage: 14
 out_dir: config/sweeps/stage14_sweep
@@ -65,3 +63,7 @@ base_params:
   use_validation: true
 
 ```
+
+#### Results:
+
+{% file src="../.gitbook/assets/stage_14_leaderboard_table.csv" %}

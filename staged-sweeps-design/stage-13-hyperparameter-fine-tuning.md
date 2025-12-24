@@ -1,9 +1,5 @@
 # Stage 13 - Hyperparameter fine-tuning
 
-### Goal
-
-With training data finalized, the goal of this sweep was to take a second pass at the hyperparameters to ensure the best configuration, as it may have changed from our initial setup .
-
 ### Experimental Design <a href="#experimental-design" id="experimental-design"></a>
 
 #### Sweep Parameters <a href="#sweep-parameters" id="sweep-parameters"></a>
@@ -76,12 +72,6 @@ base_params:
 
 ```
 
-### Results
-
-#### Stage 13 – OOD Performance Summary (Top Configurations)
-
-<table><thead><tr><th width="122.79998779296875">Experiments</th><th>Hidden Units</th><th>Dropout</th><th>Learning Rate</th><th>OOD F1 (mean ± std)</th><th>OOD Precision (mean ± std)</th><th>OOD Recall (mean ± std)</th></tr></thead><tbody><tr><td>stage13_021, stage13_057, stage13_093, stage13_153</td><td>512</td><td>0.0</td><td>0.001</td><td>0.950 ± 0.065</td><td>0.950 ± 0.070</td><td>0.950 ± 0.061</td></tr><tr><td>stage13_032, stage13_068, stage13_104, stage13_110, stage13_170</td><td>1024</td><td>0.25</td><td>0.0005</td><td>0.912 ± 0.081</td><td>0.938 ± 0.067</td><td>0.888 ± 0.097</td></tr><tr><td>stage13_030, stage13_066, stage13_102, stage13_168</td><td>1024</td><td>0.0</td><td>0.001</td><td>0.912 ± 0.108</td><td>0.963 ± 0.055</td><td>0.872 ± 0.154</td></tr><tr><td>stage13_029, stage13_065, stage13_101, stage13_167</td><td>1024</td><td>0.0</td><td>0.0005</td><td>0.862 ± 0.130</td><td>0.845 ± 0.193</td><td>0.914 ± 0.138</td></tr></tbody></table>
-
-full results:
+### Results:
 
 {% file src="../.gitbook/assets/stage_13_leaderboard_table (1).csv" %}
