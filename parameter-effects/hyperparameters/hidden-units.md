@@ -8,17 +8,6 @@
 
 <figure><img src="../../.gitbook/assets/hidden units.png" alt=""><figcaption></figcaption></figure>
 
-
-
-#### Hidden Units Effect
-
-| Hidden Units | Avg F1 | Delta F1 | Precision | Recall |
-| ------------ | ------ | -------- | --------- | ------ |
-| 0 (Baseline) | 78.2%  | —        | 89.8%     | 70.9%  |
-| 128          | 76.2%  | -2.0%    | -0.8%     | -1.1%  |
-| 512          | 76.9%  | -1.2%    | -2.8%     | +1.8%  |
-| 1024         | 77.0%  | -1.2%    | -0.2%     | -0.4%  |
-
 #### Interaction with Dropout
 
 | Dropout | H=0   | H=128 | H=512 | H=1024 | **Best** |
@@ -35,6 +24,4 @@
 | 0.0005 | 79.2% | 75.5% | 76.5% | 79.2%  | **1024** |
 | 0.001  | 80.2% | 77.1% | 78.3% | 77.5%  | **0**    |
 
-#### Key Takeaways
-
-Adding hidden units to the BirdNET classifier generally reduces performance (-1.2% average), but **interactions exist with dropout and learning rate**. With low/moderate dropout (0.0-0.25), **0 hidden units performs best**. With higher dropout (0.5), 512 units becomes optimal. Similarly, high learning rate (0.001) favors no hidden layers, while mid-range LR (0.0005) allows larger architectures (1024) to match baseline performance. **Best overall: 0 units with 0.25 dropout and 0.001 LR (80.2% F1)**. The baseline architecture is well-tuned for this task - added capacity typically causes overfitting unless paired with aggressive regularization.
+No strong correlation can be drawn between introduced hidden units and any key metrics, including its interaction with other hyperparameters. There is a tendency for the standard deviation to increase with the introduction of hidden units, and thus it will likely not be included in the final model to prevent the introduction of instability.
