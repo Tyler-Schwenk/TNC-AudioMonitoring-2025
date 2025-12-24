@@ -1,26 +1,8 @@
----
-description: >-
-  FIRST!! ADD  FULL DESCRIPTOIN OF WHAT THESE SUBSETS ARE/ HOW THEY WERE
-  GATHERED
----
-
 # Stage 6 - Data Composition
-
-### &#x20;<a href="#executive-summary" id="executive-summary"></a>
-
-### more positive data = better esults. plain and simple <a href="#executive-summary" id="executive-summary"></a>
-
-<figure><img src="../.gitbook/assets/chart_Positive_Subsets_OOD_F1.svg" alt=""><figcaption></figcaption></figure>
-
-### &#x20;<a href="#executive-summary" id="executive-summary"></a>
-
-### &#x20;<a href="#executive-summary" id="executive-summary"></a>
 
 ### Executive Summary <a href="#executive-summary" id="executive-summary"></a>
 
 Stage 6 systematically tested the impact of curated data subsets on model performance using a 90-experiment sweep (3 seeds × 2 balance settings × 2\* quality levels x 3 positive subsets × 3 negative subsets).
-
-
 
 {% include "../.gitbook/includes/experimental-design.md" %}
 
@@ -41,7 +23,5 @@ Stage 6 systematically tested the impact of curated data subsets on model perfor
 
 
 ### Results
-
-full overview:<br>
 
 {% file src="../.gitbook/assets/Stage_6_leaderboard_table.csv" %}
