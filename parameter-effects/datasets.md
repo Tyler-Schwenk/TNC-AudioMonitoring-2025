@@ -1,9 +1,5 @@
 # Datasets
 
-This is created - we will fill this in. it will not require a new sweep. tis inludes the maind high, med, low, ad well as the low subsets. it will validaion shown separate. also look at balanceing
-
-
-
 ### Positive Datasets:
 
 7 total datasets were created, and organized by their quality. First, 3 sets of data were created at the time of data labelling. These were emperically labelled at 'High', 'medium', or 'low' quality based on their spectrograms, as described in [Audio Data Split Design](../audio-data-split-design.md). \
