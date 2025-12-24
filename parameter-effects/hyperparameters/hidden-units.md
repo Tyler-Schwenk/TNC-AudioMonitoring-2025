@@ -1,12 +1,14 @@
 # Hidden Units
 
-**Minimal Benefit, Often Harmful (-1.2% F1 average for added layers)**
-
 **Overall Impact (36 configurations across 108 experiments):**
 
 * Swept across: 0, 128, 512, 1024 hidden units
 * All experiments using \[high, medium] quality, balanced training
 * Swept across 3 dropout values (0.0, 0.25, 0.5) and 3 learning rates (0.0001, 0.0005, 0.001)
+
+<figure><img src="../../.gitbook/assets/hidden units.png" alt=""><figcaption></figcaption></figure>
+
+
 
 #### Hidden Units Effect
 
