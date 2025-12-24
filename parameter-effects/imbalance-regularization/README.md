@@ -2,6 +2,8 @@
 
 Two imbalance regularization techniques will be tested. To do this I will sweep across two datasets: \[high, medium, low] and \[high, medium]. I will sweep three upsampling modes: linear, mean, and SMOTE - each at 3 ratios - 0.0, 0.5, 1.0. I will also sweep including focal loss on all iterations. All configurations will be repeated 3 times with different seeds, resulting in 108 experiments.
 
+Both of these upsampling techniques are used via flags within the BirdNET training process.
+
 ### Upsampling
 
 **Goal**\
