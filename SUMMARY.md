@@ -20,6 +20,7 @@
   * [Imbalance Regularization](parameter-effects/imbalance-regularization/README.md)
     * [Upsampling](parameter-effects/imbalance-regularization/upsampling.md)
     * [Focal loss](parameter-effects/imbalance-regularization/focal-loss.md)
+  * [Frequency - Max](parameter-effects/frequency-max.md)
   * [Sensitivity/Thesholds](parameter-effects/sensitivity-thesholds.md)
 * [Staged Sweeps Design](staged-sweeps-design/README.md)
   * [Previous model](staged-sweeps-design/previous-model.md)
