@@ -3,7 +3,7 @@
 ## Introduction
 
 The goal of:\
-improving the ml model
+contract stated: "Test and determine optimal BirdNET Analyzer settings to maximize daily detection precision and reduce verification&#x20;workload."
 
 to the end of:\
 monitioring CRLF recovery in reintroduced sites - localize location to search for egg masses/ juveniles.
