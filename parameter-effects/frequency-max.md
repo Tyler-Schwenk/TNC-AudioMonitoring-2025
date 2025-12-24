@@ -34,19 +34,24 @@ Our calls typically exist within the range of 0\~2 kHz. for this reason I attemp
 
 #### Key Findings
 
-1. **4 kHz is optimal (+1.1% F1 over full bandwidth)**
-   * Balanced performance: 88.8% precision, 87.6% recall
-   * Removes high-frequency noise while preserving critical anuran acoustic features
-   * Superior to both full bandwidth (15 kHz) and over-aggressive filtering (2 kHz)
-2. **2 kHz over-filters and collapses precision (-11.1% F1)**
-   * Near-perfect recall (98.9%) but catastrophic precision loss (62.1%)
-   * Over-simplifies acoustic space, making model flag any low-frequency signal as positive
-   * Generates 28.4 percentage points more false positives than full bandwidth
-   * Model becomes too sensitive: "everything below 2 kHz looks like a frog"
-3. **15 kHz (full bandwidth) includes unnecessary noise**
-   * Strong performance but slightly lower recall (84.3% vs 87.6% at 4 kHz)
-   * Model must learn to ignore bird calls, insects, and environmental noise above 4 kHz
-   * More complex decision boundary leads to missed detections
+**15 kHz (full bandwidth)**
+
+* Strong performance with highest precision but slightly lower recall
+* Model must learn to ignore bird calls, insects, and environmental noise above 4 kHz
+* More complex decision boundary leads to missed detections
+
+**4 kHz performs well all-around (+1.1% F1 over full bandwidth)**
+
+* Balanced performance: 88.8% precision, 87.6% recall
+* Removes high-frequency noise while preserving critical anuran acoustic features
+
+**2 kHz over-filters and collapses precision (-11.1% F1)**
+
+* Near-perfect recall (98.9%) but catastrophic precision loss (62.1%)
+* Over-simplifies acoustic space, making model flag any low-frequency signal as positive
+* Potentially some important signal being lost above 2 kHz
+
+
 
 #### Why 4 kHz Works Best
 
