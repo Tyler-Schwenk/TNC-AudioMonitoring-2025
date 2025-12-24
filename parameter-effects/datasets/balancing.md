@@ -1,6 +1,6 @@
 # Balancing
 
-#### Balancing Dramatically Helps Mixed-Quality Data (+13.8 F1)
+#### Balancing Dramatically Helps Full Dataset (+13.8 F1)
 
 When using all quality levels (high/medium/low) with custom validation and hard negatives:
 
