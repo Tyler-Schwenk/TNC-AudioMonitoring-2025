@@ -4,7 +4,7 @@ description: 10/28/2025
 
 # --Error found in Evaluation--
 
-After the fourth stage of sweeps, an error was found in the post-inference evaluation script that resulted in our models appearing to be performing worse than reality. After discovering the error, all models were reevaluated with the correct logic. This showed us that our models were performing better than expected, but our understanding of how our hyperparameters effected model performance needed to be reevaluated. Below is a description of the error and how it effected the data.
+After the fifth stage of sweeps, an error was found in the post-inference evaluation script that resulted in our models appearing to be performing worse than reality. After discovering the error, all models were reevaluated with the correct logic. This showed us that our models were performing better than expected, but our understanding of how our hyperparameters effected model performance needed to be reevaluated. Below is a description of the error and how it effected the data.
 
 ### Problem:
 
