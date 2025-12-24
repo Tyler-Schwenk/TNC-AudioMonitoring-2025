@@ -12,25 +12,25 @@ Frequency filtering limits the spectrogram to a specific frequency band during b
 
 Our calls typically exist within the range of 0\~2 kHz. for this reason I attempted training with a maximum frequency of 2 kHz, 4 kHz, and the standard 15 kHz.
 
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### Shared Configuration
 
 * **Seeds:** 123, 456, 789 (3 replicates each)
+* **Quality**: \[high, medium, low]  | **Balance** = False
 * **Epochs:** 50 | **Batch size:** 32 | **Threads:** 4
-* **Val split:** 0.2 | **Include negatives:** True
 * **Learning rate:** 0.0005 | **Hidden units:** 512
-* **Dropout:** 0.25 | **Focal loss:** Yes (gamma=2.0, alpha=0.25)
-* **Upsampling:** mean, ratio=0.0
-* **Overlap:** 0.0 | **Sensitivity:** 1.0
+* **Dropout:** 0.25
 
 ***
 
 ### Effect of Frequency Range on Performance
 
-**Stage 17 (0-15 kHz, full bandwidth):** 87.0% F1 | 90.5% precision | 84.3% recall\
-**Stage 19 (0-4 kHz, optimal):** 88.1% F1 | 88.8% precision | 87.6% recall ⭐ **BEST**\
-**Stage 19 (0-2 kHz, over-filtered):** 75.9% F1 | 62.1% precision | 98.9% recall
+**Stage 17 (0-15 kHz):** 87.0% F1 | 90.5% precision | 84.3% recall\
+**Stage 19 (0-4 kHz):** 88.1% F1 | 88.8% precision | 87.6% recall \
+**Stage 19 (0-2 kHz):** 75.9% F1 | 62.1% precision | 98.9% recall
 
 #### Key Findings
 
