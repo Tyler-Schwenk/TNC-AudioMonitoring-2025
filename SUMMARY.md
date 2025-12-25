@@ -42,5 +42,6 @@
   * [Stage 12 - Supplemental Data Composition Testing](staged-sweeps-design/stage-12.md)
   * [Stage 13 - Hyperparameter fine-tuning](staged-sweeps-design/stage-13-hyperparameter-fine-tuning.md)
   * [Stage 14 - Sensitivity Testing](staged-sweeps-design/stage-14-sensitivity-and-stability.md)
+  * [Stage 15](staged-sweeps-design/stage-15.md)
   * [stage 16](staged-sweeps-design/stage-16.md)
   * [future ideas](staged-sweeps-design/future-ideas.md)
