@@ -1,8 +1,8 @@
 # NOTES TO SELF/todo
 
-**move this all to a new project to remove history**
 
-**how the heck are we computing metrics? for deciding precision, do we take a minimunm confidence threshold? how doe sthis relate to sensitivity?**&#x20;
+
+
 
 ### **Evaluation Logic - Concise Summary**
 
