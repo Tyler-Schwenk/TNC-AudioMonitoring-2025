@@ -10,11 +10,11 @@ total: 21,887 files (7,887 poitive, 14,000 negative)
 
 All audio clips were preprocessed into 3-second windows at 48 kHz, mono... etc
 
-each clip was manually reviewed to confirm presence/absence of&#x20;
+each clip was manually reviewed to confirm presence/absence of
 
 ### General Analysis
 
-To ensure reliable training and robust evaluation of the _Rana draytonii_ (California red-legged frog) acoustic classifier, we established a **fixed data split strategy**.&#x20;
+To ensure reliable training and robust evaluation of the _Rana draytonii_ (California red-legged frog) acoustic classifier, we established a **fixed data split strategy**.
 
 * **Out-of-Distribution (OOD) Test — Sylvan Pond (Moth11 + Moth12):**\
   All audio from Sylvan Pond was held out as a **site-exclusive test set**. This ensures that model evaluation includes a “different site” condition, capturing domain shift effects (e.g., background acoustics unique to Sylvan).\
@@ -99,16 +99,14 @@ Below is the specific distribution of audio clips by split. Counts reflect the n
   * _Moth10:_ 57 neg (val), 631 neg (test\_iid) = **688 neg**
   * ➝ Smaller contributions relative to Cole Creek and Rancho Meling, but they ensure representation from diverse devices and sites across splits.
 
-<figure><img src=".gitbook/assets/site locations (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/site locations (1).jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/SRP.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/SRP.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/Wheatley.jpg" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/Wheatley.jpg" alt=""><figcaption></figcaption></figure>
 
 ***
 
 Full data manifest can be found here:
 
-{% file src=".gitbook/assets/manifest.csv" %}
+{% file src="../.gitbook/assets/manifest.csv" %}

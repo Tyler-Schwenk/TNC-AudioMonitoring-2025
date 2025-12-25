@@ -2,7 +2,7 @@
 
 ### Positive Datasets:
 
-7 total datasets were created, and organized by their quality. First, 3 sets of data were created at the time of data labelling. These were emperically labelled at 'High', 'medium', or 'low' quality based on their spectrograms, as described in [Audio Data Split Design](../../audio-data-split-design.md). \
+7 total datasets were created, and organized by their quality. First, 3 sets of data were created at the time of data labelling. These were emperically labelled at 'High', 'medium', or 'low' quality based on their spectrograms, as described in [Audio Data Split Design](../../audio-data-split-design/). \
 Next, to create finer grained subsets of the large (X files) low quality set, I created 4 subsets of the low quality data. The goal was to create various sizes of subsets of the Highest quality, low quality data. To do this I ran inference on the test set of low quality data using model stage4\_038, which was trained on only medium/high quality data, ensuring this was the first time the low quality data was seen. I then took subsets of the low quality data by selecting the top performing data based on the confidence rating of the positive detections by the model. then i took the top predictions for those files an pulled the files the top x% of filed in terms of RADR score to separate folders. this resulted in the 4 folders below:\
 small: 51 (5%), medium: 154 (15%), large: 309 (30%), top50: 515 (50%)
 

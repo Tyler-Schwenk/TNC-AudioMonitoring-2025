@@ -1,6 +1,6 @@
 # Positive Datasets & Subsets
 
-The graphs below describe a few telling metrics for our positive data subsets. Graphs are ordered from all positive data included on the left, decreasing the amount of data by dropping the lowest quality data first, until reaching only high quality data on the right. More information about datasets can be found in my [Audio Data Split Design](../../audio-data-split-design.md).
+The graphs below describe a few telling metrics for our positive data subsets. Graphs are ordered from all positive data included on the left, decreasing the amount of data by dropping the lowest quality data first, until reaching only high quality data on the right. More information about datasets can be found in my [Audio Data Split Design](../../audio-data-split-design/).
 
 All data experiments shown in these graphs used balancing (negative class down sampled to match positive size), and no use of the custom validation set.
 
