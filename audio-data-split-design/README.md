@@ -107,6 +107,6 @@ Below is the specific distribution of audio clips by split. Counts reflect the n
 
 ***
 
-Full data manifest can be found here:
+The full audio data manifest can be found here:
 
 {% file src="../.gitbook/assets/manifest.csv" %}
