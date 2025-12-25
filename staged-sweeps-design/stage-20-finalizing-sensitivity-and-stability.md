@@ -1,42 +1,43 @@
-# Stage 17 - Data Balance Regularization
+# Stage 20 - Finalizing Sensitivity and Stability
 
 
 
 ```yaml
-stage: 17
-out_dir: config/sweeps/stage17_sweep
+stage: 20
+out_dir: config/sweeps/stage20_sweep
 axes:
   seed:
-  - 123
-  - 456
-  - 789
+  - 111
+  - 222
+  - 333
+  - 444
+  - 555
   quality:
-  - - high
-    - medium
   - - high
     - medium
     - low
   balance:
   - false
-  upsampling_mode:
-  - linear
-  - mean
-  - smote
   focal-loss:
-  - true
   - false
+  fmax:
+  - 15000
+  - 4000
   upsampling_ratio:
   - 0.0
-  - 0.5
+  sensitivity:
+  - 0.5 
+  - 0.75
   - 1.0
+  - 1.25
+  - 1.5
+  negative_subsets:
+  - - AudioData\curated\hardNeg\hardneg_conf_min_85
 base_params:
   epochs: 50
   upsampling_ratio: 0.0
   mixup: false
   label_smoothing: false
-  focal-loss: true
-  focal-loss-gamma: 2.0
-  focal-loss-alpha: 0.25
   dropout: 0.25
   learning_rate: 0.0005
   batch_size: 32
@@ -46,5 +47,3 @@ base_params:
   use_validation: false
 
 ```
-
-<br>
