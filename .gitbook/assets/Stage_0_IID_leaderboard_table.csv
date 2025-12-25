@@ -1,0 +1,6 @@
+Signature,Experiments,Sensitivity,iid.f1__mean,iid.f1__std,iid.precision__mean,iid.precision__std,iid.recall__mean,iid.recall__std
+05992e52,000_OldModel2024_baseline_mc25_sens075_seed01,0.75,0.964,0.0,0.939,0.0,0.991,0.0
+4ff22074,000_OldModel2024_baseline_mc25_sens125_seed01,1.25,0.96,0.0,0.924,0.0,0.998,0.0
+91d2e4db,000_OldModel2024_baseline_mc25_sens15_seed01,1.5,0.96,0.0,0.924,0.0,0.998,0.0
+f6b2eac8,000_OldModel2024_baseline_mc25_sens50_seed01,0.5,0.866,0.0,0.764,0.0,1.0,0.0
+1747d7e1,000_OldModel2024_baseline_mc25_sens100_seed01,1.0,0.847,0.0,0.734,0.0,1.0,0.0

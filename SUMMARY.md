@@ -28,7 +28,7 @@
 * [Looking Forward](looking-forward.md)
 * [Environmental Impact](environmental-impact.md)
 * [Staged Sweeps Design](staged-sweeps-design/README.md)
-  * [Previous model](staged-sweeps-design/previous-model.md)
+  * [Stage 0 - 2024 model](staged-sweeps-design/previous-model.md)
   * [--Error found in Evaluation--](staged-sweeps-design/error-found-in-evaluation/README.md)
     * [\[Archive\] Stage 1 - Capacity & Regularization](staged-sweeps-design/error-found-in-evaluation/archive-stage-1-capacity-and-regularization.md)
     * [\[Archive\] Stage 2 - Data Augmentation](staged-sweeps-design/error-found-in-evaluation/archive-stage-2-data-augmentation.md)
