@@ -55,17 +55,12 @@ Code•3KB
 
 ***
 
-#### Top Models <a href="#top-models" id="top-models"></a>
+## Top Models <a href="#top-models" id="top-models"></a>
 
-Full evaluation of all runs here:
 
-### stage1sweep.csv
 
-Text•45KB**Top 10 by OOD Best-F1**
-
-|       |       |      |      |       |    |       |       |       |       |
-| ----- | ----- | ---- | ---- | ----- | -- | ----- | ----- | ----- | ----- |
 | 0.812 | 0.692 | 128  | 0.25 | 0     | 32 | 0.605 | 0.434 | 0.996 | 0.982 |
+| ----- | ----- | ---- | ---- | ----- | -- | ----- | ----- | ----- | ----- |
 | 0.76  | 0.626 | 1024 | 0.25 | 0     | 16 | 0.642 | 0.474 | 0.998 | 0.969 |
 | 0.744 | 0.605 | 128  | 0    | 0.001 | 16 | 0.62  | 0.454 | 0.978 | 0.968 |
 | 0.732 | 0.854 | 512  | 0.25 | 0     | 32 | 0.665 | 0.684 | 0.648 | 0.641 |
@@ -76,4 +71,4 @@ Text•45KB**Top 10 by OOD Best-F1**
 | 0.683 | 0.689 | 1024 | 0    | 0     | 32 | 0.622 | 0.568 | 0.688 | 0.676 |
 | 0.672 | 0.52  | 0    | 0    | 0.001 | 32 | 0.508 | 0.342 | 0.988 | 0.948 |
 
-Hyperparameter EffectsWhat they plot:X-axis = the hyperparameter being swept (e.g. hidden units).Y-axis = F1 score.Two lines: IID F1 (blue) and OOD F1 (orange).Lines: These are averages across all runs with that hyperparameter value.Shaded regions: The shaded band around each line is the confidence interval (CI) -- 95% CI of the mean.Narrow band → metric is consistent across runs.Wide band → metric varies a lot depending on other hyperparameters.Hidden UnitsLarger heads (1024 HU) gave the best average performance, but smaller heads (128–512 HU) sometimes produced the single best OOD runs.Tradeoff: larger heads are stable, smaller heads spike.DropoutDropout = 0.25 consistently shifts performance upward.0.5 sometimes hurts recall, 0.0 overfits.Learning RateLR = 1e-3 produced strong averages, but the best individual OOD run came at 5e-4.There is no clear dominant setting hereBatch SizeBatch size of 32 was slightly better on average than 16, but no clear causation can be drawn to make this a major driver.TakeawaysThese results allow us to narrow the search space:Hidden Units: 128–1024Dropout: 0.25Learning Rate: 5e-4–1e-3Batch Size: 32What Stage 1 Did Not Resolve<br>
+<br>
