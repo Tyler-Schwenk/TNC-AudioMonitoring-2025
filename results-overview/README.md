@@ -64,7 +64,37 @@ The 2025 model showed a 7.9% improvement in AUC under the ROC curve, and a 12.7%
 
 ### Threshold effect
 
+The new model demonstrates improved stability across thresholds for a given sensitivity setting.
 
+{% columns %}
+{% column %}
+### Sensitivity 0.5
+
+2025 model
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+2024 model
+
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+### Sensitivity 1.5
+
+2025 model
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+2024 model
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 
 
