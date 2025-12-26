@@ -26,15 +26,17 @@ The improvements of this year's model can be summarized by a few key changes;
 
 ### Generalization&#x20;
 
-2024 model:
+Both models compared as average of performance calculated at 5 sensitivity values \[0.5, 1.5]
 
-* IID Mean F1 ± Std - 0.919 ± 0.058
-* OOD Mean F1 ± Std - 0.754 ± 0.065
+**2024** model:
 
-2024 model:
+* IID Mean F1 ± Std - 91.9 ± 5.8
+* OOD Mean F1 ± Std - 75.4 ± 6.5
 
-* IID Mean F1 ± Std - 0.919 ± 0.058
-* OOD Mean F1 ± Std - 0.754 ± 0.065
+**2025** model:
+
+* IID Mean F1 ± Std - 0.9714 ± 0.14
+* OOD Mean F1 ± Std - 88.5 ± 0.15
 
 
 
