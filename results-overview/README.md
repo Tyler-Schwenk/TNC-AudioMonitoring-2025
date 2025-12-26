@@ -4,7 +4,21 @@ give auc. give other metrics. relat eback to reality of using in field. show imp
 
 talk about how we know we have reached the maximum extraction of information from our given dataset, it will likely only be improved with more data
 
-#### two versions - one low data (for brad audio moths), one full:
+
+
+### Sensitivity effect
+
+how it performs at different sensitivities
+
+
+
+best threshold at different sensitivities
+
+maybe show this via a graph. maybe these are not a single answer but more of a range
+
+
+
+### two versions - one low data (for brad audio moths), one full:
 
 **Nyquist theorem** - you need to sample at **2× the highest frequency** you want to capture.
 
@@ -26,5 +40,5 @@ it sould also be noted that the groud truth taken here, is still potentially dif
 
 also do this analysis on the original model
 
-{% file src=".gitbook/assets/positive_counts_by_recorder_date.txt" %}
+{% file src="../.gitbook/assets/positive_counts_by_recorder_date.txt" %}
 
