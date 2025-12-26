@@ -9,18 +9,10 @@ Assuming a recording schedule used during the 2024/2025 season:\
 
 
 
-High precision option:\
-Ood.F1
+High precision option:
 
-0.7667STD ±0.0172
-
-Ood.Precision
-
-0.9650STD ±0.0209
-
-Ood.Recall
-
-0.6370STD ±0.0333
+stage 17\_046.\
+F1: 75.6, Precision: 96.8, Recall: 61.1
 
 
 
