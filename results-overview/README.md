@@ -8,13 +8,7 @@ The improvements of this year's model can be summarized by a few key changes;
 * More balanced precision-recall tradeoff, favoring stronger precision.
 * More generalized model, stronger performance under domain shift.
 
-
-
-
-
-***
-
-### Generalizaiton - OOD performance
+### Stability
 
 #### 2024 Model OOD Performance
 
@@ -23,6 +17,26 @@ The improvements of this year's model can be summarized by a few key changes;
 #### 2025 Model OOD Performance
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+***
+
+### Generalization&#x20;
+
+2024 model:
+
+* IID Mean F1 ± Std - 0.919 ± 0.058
+* OOD Mean F1 ± Std - 0.754 ± 0.065
+
+2024 model:
+
+* IID Mean F1 ± Std - 0.919 ± 0.058
+* OOD Mean F1 ± Std - 0.754 ± 0.065
+
+
 
 ***
 
@@ -93,3 +107,11 @@ it sould also be noted that the groud truth taken here, is still potentially dif
 also do this analysis on the original model
 
 {% file src="../.gitbook/assets/positive_counts_by_recorder_date.txt" %}
+
+
+
+
+
+{% file src="../.gitbook/assets/Stage_21_ood_leaderboard_table.csv" %}
+
+{% file src="../.gitbook/assets/Stage_21_iid_leaderboard_table.csv" %}
