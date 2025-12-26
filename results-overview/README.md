@@ -36,7 +36,7 @@ The 2025 model shows a much smaller standard deviation across sensitivity values
 
 ***
 
-### More Metrics
+### Performance Curves
 
 The 2025 model showed a 7.9% improvement in AUC under the ROC curve, and a 12.7% improvement under the Precision-Recall curve; indicating an improved discriminatory ability and improved precision at a high recall.
 
