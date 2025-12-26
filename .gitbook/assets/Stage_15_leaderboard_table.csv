@@ -1,0 +1,6 @@
+Signature,Experiments,Sensitivity,ood.f1__mean,ood.f1__std,ood.precision__mean,ood.precision__std,ood.recall__mean,ood.recall__std
+a987cc1e,"stage15_004, stage15_009, stage15_014, stage15_019, stage15_024, stage15_029, stage15_034",1.25,0.808,0.047,0.901,0.046,0.739,0.084
+7f6794a3,"stage15_002, stage15_007, stage15_012, stage15_017, stage15_022, stage15_027, stage15_032",0.75,0.767,0.059,0.942,0.073,0.662,0.12
+06781dfc,"stage15_001, stage15_006, stage15_011, stage15_016, stage15_021, stage15_026, stage15_031",0.5,0.761,0.037,0.958,0.043,0.635,0.061
+e0b5f031,"stage15_003, stage15_008, stage15_013, stage15_018, stage15_023, stage15_028, stage15_033",1.0,0.755,0.041,0.948,0.039,0.631,0.065
+df2809ca,"stage15_005, stage15_010, stage15_015, stage15_020, stage15_025, stage15_030, stage15_035",1.5,0.744,0.038,0.906,0.165,0.671,0.153

@@ -1,0 +1,37 @@
+Signature,Experiments,Quality,Upsampling,Focal Loss,ood.f1__mean,ood.f1__std,ood.precision__mean,ood.precision__std,ood.recall__mean,ood.recall__std
+380dbf79,"stage17_028, stage17_064, stage17_100","high, medium, low",mean,No,0.87,0.014,0.905,0.067,0.843,0.068
+feb81061,"stage17_034, stage17_070, stage17_106","high, medium, low",smote,No,0.868,0.011,0.858,0.066,0.883,0.051
+580a3c65,"stage17_022, stage17_058, stage17_094","high, medium, low",linear,No,0.843,0.026,0.782,0.083,0.925,0.065
+e0fe07b4,"stage17_030, stage17_066, stage17_102","high, medium, low",mean/1.0,No,0.833,0.021,0.795,0.111,0.894,0.089
+6141c710,"stage17_036, stage17_072, stage17_108","high, medium, low",smote/1.0,No,0.831,0.08,0.766,0.165,0.935,0.067
+cb5e7a63,"stage17_031, stage17_067, stage17_103","high, medium, low",smote,Yes,0.815,0.102,0.768,0.202,0.908,0.08
+cfcdd6c2,"stage17_019, stage17_055, stage17_091","high, medium, low",linear,Yes,0.808,0.113,0.737,0.194,0.932,0.059
+dae902d7,"stage17_032, stage17_068, stage17_104","high, medium, low",smote/0.5,Yes,0.795,0.055,0.683,0.104,0.962,0.036
+35716256,"stage17_007, stage17_043, stage17_079","high, medium",mean,Yes,0.786,0.014,0.835,0.072,0.747,0.055
+d701d00c,"stage17_024, stage17_060, stage17_096","high, medium, low",linear/1.0,No,0.786,0.015,0.65,0.021,0.994,0.002
+e8fb5461,"stage17_029, stage17_065, stage17_101","high, medium, low",mean/0.5,No,0.79,0.065,0.698,0.162,0.947,0.089
+e107196f,"stage17_025, stage17_061, stage17_097","high, medium, low",mean,Yes,0.798,0.122,0.759,0.234,0.897,0.09
+25bb4e7f,"stage17_002, stage17_038, stage17_074","high, medium",linear/0.5,Yes,0.769,0.012,0.816,0.043,0.731,0.049
+d9ce699a,"stage17_035, stage17_071, stage17_107","high, medium, low",smote/0.5,No,0.776,0.054,0.716,0.21,0.912,0.147
+0f699dc7,"stage17_010, stage17_046, stage17_082","high, medium",mean,No,0.767,0.021,0.965,0.026,0.637,0.041
+273bd9f3,"stage17_013, stage17_049, stage17_085","high, medium",smote,Yes,0.767,0.028,0.911,0.075,0.669,0.073
+85faad83,"stage17_033, stage17_069, stage17_105","high, medium, low",smote/1.0,Yes,0.772,0.062,0.648,0.112,0.972,0.045
+1685e69b,"stage17_023, stage17_059, stage17_095","high, medium, low",linear/0.5,No,0.761,0.011,0.615,0.015,0.999,0.001
+6897b9cf,"stage17_020, stage17_056, stage17_092","high, medium, low",linear/0.5,Yes,0.774,0.085,0.706,0.234,0.928,0.122
+89eccda7,"stage17_001, stage17_037, stage17_073","high, medium",linear,Yes,0.762,0.028,0.904,0.08,0.667,0.085
+5255b56c,"stage17_014, stage17_050, stage17_086","high, medium",smote/0.5,Yes,0.749,0.034,0.857,0.092,0.679,0.102
+c9efd52e,"stage17_011, stage17_047, stage17_083","high, medium",mean/0.5,No,0.743,0.014,0.946,0.006,0.613,0.018
+e629f458,"stage17_006, stage17_042, stage17_078","high, medium",linear/1.0,No,0.743,0.022,0.961,0.033,0.608,0.043
+9902c9f6,"stage17_016, stage17_052, stage17_088","high, medium",smote,No,0.745,0.03,0.978,0.022,0.603,0.049
+5104461e,"stage17_026, stage17_062, stage17_098","high, medium, low",mean/0.5,Yes,0.754,0.083,0.623,0.133,0.977,0.038
+4607e03f,"stage17_018, stage17_054, stage17_090","high, medium",smote/1.0,No,0.741,0.034,0.933,0.058,0.62,0.075
+d530b134,"stage17_003, stage17_039, stage17_075","high, medium",linear/1.0,Yes,0.736,0.023,0.85,0.123,0.657,0.04
+8fa1bc4a,"stage17_015, stage17_051, stage17_087","high, medium",smote/1.0,Yes,0.738,0.039,0.847,0.183,0.691,0.145
+38c6dba5,"stage17_009, stage17_045, stage17_081","high, medium",mean/1.0,Yes,0.734,0.056,0.711,0.15,0.791,0.11
+c4a26df4,"stage17_004, stage17_040, stage17_076","high, medium",linear,No,0.724,0.024,0.98,0.031,0.575,0.035
+0b9e51f3,"stage17_012, stage17_048, stage17_084","high, medium",mean/1.0,No,0.721,0.011,0.968,0.028,0.574,0.009
+63635c6b,"stage17_027, stage17_063, stage17_099","high, medium, low",mean/1.0,Yes,0.721,0.045,0.565,0.057,0.997,0.005
+95fc67eb,"stage17_005, stage17_041, stage17_077","high, medium",linear/0.5,No,0.712,0.014,0.995,0.008,0.555,0.02
+db2f3cc7,"stage17_017, stage17_053, stage17_089","high, medium",smote/0.5,No,0.704,0.014,0.998,0.004,0.544,0.018
+8298aef7,"stage17_008, stage17_044, stage17_080","high, medium",mean/0.5,Yes,0.704,0.023,0.95,0.081,0.564,0.062
+cf09172a,"stage17_021, stage17_057, stage17_093","high, medium, low",linear/1.0,Yes,0.705,0.044,0.546,0.052,0.999,0.001
