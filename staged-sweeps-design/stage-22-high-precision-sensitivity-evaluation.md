@@ -52,6 +52,20 @@ analyzer_args:
 
 ```
 
+{% columns %}
+{% column %}
+Sensitivity 1.5
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+Sensitivity 0.5
+
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
 {% file src="../.gitbook/assets/Stage_22_iid_leaderboard_table.csv" %}
 
 {% file src="../.gitbook/assets/Stage_22_ood_leaderboard_table.csv" %}

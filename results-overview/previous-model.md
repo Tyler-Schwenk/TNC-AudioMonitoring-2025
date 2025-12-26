@@ -10,11 +10,9 @@ below is the model tested on our new larger set of data curated for the 2025 mod
 
 model file: [https://huggingface.co/TylerSchwenk/Rana-Draytonii-Detection/tree/main](https://huggingface.co/TylerSchwenk/Rana-Draytonii-Detection/tree/main)
 
-Key setup
+Setup
 
-* Data: These metrics are from recomputing on our new larger set of data. this will give more accurate metrics, as well as allow one-to-one comparison with our new models as we train them
-* Pull & describe more about the parameters used
-* Inference knobs compared: sensitivity 1.0 vs 0.5, min\_conf=0.25, same analyzer args (fmin/fmax/overlap).
+* Data: These metrics are from recomputing old weights with our new larger set of test data. This will give more accurate metrics, as well as allow one-to-one comparison with our new models as we train them
 
 ***
 
