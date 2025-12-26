@@ -52,3 +52,5 @@
   * [Stage 18 - Frequency Max Reduction](staged-sweeps-design/stage-18-frequency-max-reduction.md)
   * [Stage 19 - Minimal Frequency Max](staged-sweeps-design/stage-19-minimal-frequency-max.md)
   * [Stage 20 - Finalizing Sensitivity and Stability](staged-sweeps-design/stage-20-finalizing-sensitivity-and-stability.md)
+  * [Stage 21 - High F1 Sensitivity Evaluation](staged-sweeps-design/stage-21-high-f1-sensitivity-evaluation.md)
+  * [Stage 22 - High Precision Sensitivity Evaluation](staged-sweeps-design/stage-22-high-precision-sensitivity-evaluation.md)
