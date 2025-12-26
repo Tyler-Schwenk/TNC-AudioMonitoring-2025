@@ -1,5 +1,7 @@
 # Daily Temporal Granularity
 
+
+
 best config for f1: sens .75, threshold 1.0
 
 f1: .886, precision: .897, recall: .875
@@ -9,129 +11,76 @@ Assuming a recording schedule used during the 2024/2025 season:\
 
 
 
+
+
 High precision option:
 
-stage 17\_046.\
-F1: 75.6, Precision: 96.8, Recall: 61.1
+Sens 1.5, threshold: 0.3;
+
+F1: 76.1, Precision: 98.5, Recall: 62.0
+
+adjust threshold to 0.05;&#x20;
+
+F1: 80.0, Precision: 93.6, Recall: 70.0
 
 
 
-### Daily Detection Performance Projections
+**Context & Methodology:**
 
-**Model Performance (Best Model):**
+To estimate real-world performance at daily temporal granularity, I analyzed calling activity from the 2024/2025 field season for days where positive RADR detections occurred. this included 9 recorders and 139 recording nights.&#x20;
 
-* **Recall: 0.875** → Detects 87.5% of true frog calls
-* **Precision: 0.897** → 89.7% of detections are correct (10.3% are false positives)
-* **F1: 0.886**
+This revealed typical calling patterns. In days where RADR calls were identified median of 20 positive files/night, with 84% of nights having ≥5 calls. 16% have only one file
 
-***
-
-#### 1. Probability of Detecting Frogs When Present
-
-The key insight: If frogs are calling multiple times per night, you need to miss **ALL** calls to have a false absence.
-
-**Daily Detection Confidence by Call Frequency:**
-
-| Scenario       | True Calls/Day             | Detection Probability | False Absence Risk |
-| -------------- | -------------------------- | --------------------- | ------------------ |
-| **Very Quiet** | 1-2 files                  | 87.5% - 98.4%         | 12.5% - 1.6%       |
-| **Quiet**      | 5 files (25th percentile)  | 99.99%                | 0.01%              |
-| **Typical**    | 20 files (median)          | >99.9999%             | <0.0001%           |
-| **Busy**       | 53 files (75th percentile) | \~100%                | negligible         |
-| **Chorus**     | 127-645 files              | \~100%                | negligible         |
-
-**Math:** Probability of missing all N calls = (1 - 0.875)^N = 0.125^N
-
-**Key Findings:**
-
-* **89% of your recording days have ≥5 positive files** → You'll have >99.99% detection confidence on most nights
-* **Only 16% of days have 1 file** → These rare quiet nights have \~87.5% detection confidence
-* **Bottom line: If frogs are calling, you'll almost certainly detect them**
+Our recording schedule (5pm-11pm, 1 min on / 9 min off) produces **432 1-minute files per night**, which are split into **8,640 3-second segments** for model inference. We use this ground truth to project false positive burden and detection confidence under different model configurations.
 
 ***
 
-#### 2. False Positive Burden (Files to Review)
+#### Expected performance for Daily Detections
 
-This depends on how many negative files you process. Let's estimate:
-
-**Assumptions:**
-
-* Continuous recording: \~288 files/day (24 hours × 12 files/hour at 5-min intervals)
-* OR targeted recording: \~144 files/day (12 hours overnight × 12 files/hour)
-
-**Expected False Positives per Day:**
-
-| Recording Strategy | Total Files | Expected True Positives (median) | Expected False Positives | Total Flagged Files | Review Burden                     |
-| ------------------ | ----------- | -------------------------------- | ------------------------ | ------------------- | --------------------------------- |
-| **Full 24h**       | 288 files   | 17.5 (20 × 0.875)                | \~**30 files**           | \~48 files          | **17% of day needs review**       |
-| **Targeted 12h**   | 144 files   | 17.5                             | \~**15 files**           | \~33 files          | **23% of recordings need review** |
-
-**Calculation:**
-
-* Negative files per day = Total files - True positive files
-* Model flags negatives at rate = (1 - precision) = 0.103
-* Expected FP = Negative\_files × 0.103
-
-Using median scenario (20 true positives, 144 total files):
-
-* Negatives: 144 - 20 = 124 files
-* False positives: 124 × 0.103 ≈ 12.8 → **\~13 false positives**
-* Total flagged: 17.5 true + 13 false ≈ **31 files to review/day**
+| Files/Night | % of Nights  | Detection Probability (Best F1) | Detection Probability (High Precision) |
+| ----------- | ------------ | ------------------------------- | -------------------------------------- |
+| 1 file      | 16%          | 87.5%                           | 62.0%                                  |
+| 5 files     | 25th %ile    | 99.97%                          | 99.0%                                  |
+| 20 files    | Median (50%) | >99.9999%                       | >99.9999%                              |
+| 53 files    | 75th %ile    | \~100%                          | \~100%                                 |
 
 ***
 
-#### 3. Practical Implications
+#### Trade-Off Analysis
 
-**Good News:**
-
-* **Presence Detection: Extremely Reliable** - With median 20 calls/night, you have >99.9999% chance of detecting frogs when present
-* **Even quiet nights (5 calls) give 99.99% detection confidence**
-
-**Trade-offs:**
-
-* **\~10% false positive rate** means roughly 1 in 10 flagged detections needs verification
-* **Daily review burden: 15-30 files** depending on recording duration
-* **For 139 recording days: \~2,100-4,200 total files to review** across the season
-
-**Optimization Strategies:**
-
-1. **Increase threshold** (reduce sensitivity) to reduce false positives
-   * Trade-off: Slightly lower recall on quiet nights
-   * Your stage21 experiments will show this!
-2. **Use confidence scores** to prioritize review
-   * High-confidence detections (>0.9) are likely real
-   * Low-confidence detections (0.25-0.5) need more scrutiny
-3. **Focus review on absence days**
-   * Days with 0 detections are your validation targets
-   * Only need to verify a sample to confirm true absence
+| Metric                              | Best F1 Model | High Precision Model |
+| ----------------------------------- | ------------- | -------------------- |
+| **Review burden**                   | 45 min/night  | 7 min/night          |
+| **FP per night (3-sec segments)**   | 888           | 129                  |
+| **Detection (median night)**        | >99.9999%     | >99.9999%            |
+| **Detection (quiet 1-call nights)** | 87.5%         | 62.0%                |
 
 ***
 
-#### 4. Confidence Levels for Reporting
+#### Recommendation
 
-**For Daily Presence/Absence:**
+**For daily presence/absence monitoring, the High Precision Model is strongly recommended:**
 
-| Scenario                            | Confidence            | Justification                                |
-| ----------------------------------- | --------------------- | -------------------------------------------- |
-| **Detected ≥5 calls**               | **High (>99%)**       | Strong evidence, very low false absence risk |
-| **Detected 1-4 calls**              | **Moderate (95-99%)** | Likely real, but verify a sample             |
-| **Detected 0 calls**                | **Moderate-High**     | Likely absent IF you processed >100 files    |
-| **Detected 0 calls (low coverage)** | **Low**               | Insufficient sampling                        |
+**Key Benefits:**
 
-**For Seasonal Patterns:**
+* **85% reduction in false positives** (129 vs 888 per night)
+* **Saves 88 hours of review time** per season (16 vs 104 hours total)
+* **Still maintains >99% detection confidence on 84% of nights with positive detections** (those with ≥5 calls)
+* **4.6× better signal-to-noise ratio** (8.8% vs 1.9%)
 
-* Your 139 recording days across 9 recorders provide strong temporal coverage
-* Can confidently identify calling phenology (start/peak/end dates)
-* Can detect spatial variation across recorders
+**Acceptable Trade-Off:**
 
-**Key Question:** How many files per day are you actually processing? This will refine the false positive estimates.
+* **Lower recall** (62% vs 87.5%) primarily affects the rarest scenario: single-call nights (16% of nights)
+* On typical calling nights (median 20 calls), both models achieve >99.9999% detection probability
+* The F1 drop (0.886 → 0.761) is acceptable when review burden is the primary constraint
 
-*
-*
-*
-*
+**Mitigation Strategy for Low-Call Nights:**
 
-<br>
+* Days with 0 detections: Flag 10-20% for manual spot-check validation
+* Document any systematic patterns in missed detections
+* High confidence in "presence" calls (98.5% precision means false positives are rare)
+
+**Bottom Line:** The High Precision Model reduces workload by 85% while maintaining excellent performance for the primary use case of daily presence/absence determination. The lower recall on rare single-call nights is an acceptable trade-off for the dramatic reduction in false positives.
 
 
 

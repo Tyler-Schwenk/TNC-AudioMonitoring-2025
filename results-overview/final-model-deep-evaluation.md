@@ -6,8 +6,6 @@
 
 ### Sensitivity effect
 
-how it performs at different sensitivities
-
 
 
 #### best threshold at different sensitivities
@@ -25,12 +23,28 @@ Sensitivity 0.5
 Sensitivity 1.5
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+
 {% endcolumn %}
 {% endcolumns %}
 
 
 
 Maximum Precision setup
+
+{% columns %}
+{% column %}
+Sensitivity 1.5
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+Sensitivity 0.5
+
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 
 

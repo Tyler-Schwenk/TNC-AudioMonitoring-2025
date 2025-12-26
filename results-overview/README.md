@@ -2,7 +2,7 @@
 
 ## Key improvements
 
-The improvements of this year's model can be summarized by a few key changes;
+The improvements of this year's best model can be summarized by a few key changes;
 
 * An increase in stability across Sensitivity values and threshold settings.
 * More balanced precision-recall tradeoff, favoring stronger precision.
@@ -57,8 +57,6 @@ The 2025 model showed a 7.9% improvement in AUC under the ROC curve, and a 12.7%
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 
 
@@ -134,6 +132,6 @@ also do this analysis on the original model
 
 
 
-{% file src="../.gitbook/assets/Stage_21_ood_leaderboard_table.csv" %}
+{% file src="../.gitbook/assets/Stage_21_ood_leaderboard_table (1).csv" %}
 
-{% file src="../.gitbook/assets/Stage_21_iid_leaderboard_table.csv" %}
+{% file src="../.gitbook/assets/Stage_21_iid_leaderboard_table (1).csv" %}
