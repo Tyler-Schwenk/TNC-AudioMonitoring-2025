@@ -1,4 +1,51 @@
-# Best model results
+# Improvement Overview
+
+## Key improvements
+
+The improvements of this year's model can be summarized by two key changes;
+
+* An increase in stability across Sensitivity values and threshold settings
+* More balanced precision-recall tradeoff, favoring stronger precision
+
+
+
+#### 2024 Model
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+#### 2025 Model
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+{% columns %}
+{% column %}
+#### 2024 @ Ideal Settings
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+#### 2025 @ Ideal Settings
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+
+
+
+
+
 
 give auc. give other metrics. relat eback to reality of using in field. show improvemnt form previous models
 
@@ -41,4 +88,3 @@ it sould also be noted that the groud truth taken here, is still potentially dif
 also do this analysis on the original model
 
 {% file src="../.gitbook/assets/positive_counts_by_recorder_date.txt" %}
-

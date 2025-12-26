@@ -12,7 +12,7 @@ Frequency filtering limits the spectrogram to a specific frequency band during b
 
 Our calls typically exist within the range of 0\~2 kHz. for this reason I attempted training with a maximum frequency of 2 kHz, 4 kHz, and the standard 15 kHz.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -20,7 +20,7 @@ Key setup
 
 ### IID Performance by Sensitivity (2024 Baseline)
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Sensitivity | IID F1 (mean ± std) | IID Precision (mean ± std) | IID Recall (mean ± std) |
 | ----------- | ------------------- | -------------------------- | ----------------------- |
@@ -36,7 +36,7 @@ Key setup
 
 ### OOD Performance by Sensitivity (2024 Baseline)
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Sensitivity | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
 | ----------- | ------------------- | -------------------------- | ----------------------- |
