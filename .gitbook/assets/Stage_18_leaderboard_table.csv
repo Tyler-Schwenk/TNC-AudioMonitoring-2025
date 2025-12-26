@@ -1,0 +1,11 @@
+Signature,Experiments,Quality,Sensitivity,fmax__mean,fmax__std,ood.f1__mean,ood.f1__std,ood.precision__mean,ood.precision__std,ood.recall__mean,ood.recall__std
+d9c4062f,"stage18_003, stage18_013, stage18_023, stage18_033, stage18_043, stage18_053, stage18_063, stage18_073, stage18_083, stage18_093","high, medium, low",1.0,15000.0,,0.792,0.053,0.672,0.09,0.979,0.029
+898c0220,"stage18_002, stage18_012, stage18_022, stage18_032, stage18_042, stage18_052, stage18_062, stage18_072, stage18_082, stage18_092","high, medium, low",0.75,15000.0,,0.788,0.059,0.713,0.148,0.929,0.11
+05e8917c,"stage18_004, stage18_014, stage18_024, stage18_034, stage18_044, stage18_054, stage18_064, stage18_074, stage18_084, stage18_094","high, medium, low",1.25,15000.0,,0.777,0.061,0.652,0.096,0.978,0.031
+f33d0b47,"stage18_005, stage18_015, stage18_025, stage18_035, stage18_045, stage18_055, stage18_065, stage18_075, stage18_085, stage18_095","high, medium, low",1.5,15000.0,,0.777,0.078,0.663,0.138,0.97,0.046
+de64b30a,"stage18_001, stage18_011, stage18_021, stage18_031, stage18_041, stage18_051, stage18_061, stage18_071, stage18_081, stage18_091","high, medium, low",0.5,15000.0,,0.772,0.07,0.652,0.126,0.974,0.046
+7243ddc9,"stage18_006, stage18_016, stage18_026, stage18_036, stage18_046, stage18_056, stage18_066, stage18_076, stage18_086, stage18_096","high, medium, low",0.5,4000.0,,0.746,0.064,0.624,0.142,0.97,0.073
+d97f7cbc,"stage18_008, stage18_018, stage18_028, stage18_038, stage18_048, stage18_058, stage18_068, stage18_078, stage18_088, stage18_098","high, medium, low",1.0,4000.0,,0.732,0.035,0.582,0.048,0.992,0.013
+35bf096b,"stage18_007, stage18_017, stage18_027, stage18_037, stage18_047, stage18_057, stage18_067, stage18_077, stage18_087, stage18_097","high, medium, low",0.75,4000.0,,0.731,0.033,0.578,0.043,0.997,0.003
+077774e9,"stage18_010, stage18_020, stage18_030, stage18_040, stage18_050, stage18_060, stage18_070, stage18_080, stage18_090, stage18_100","high, medium, low",1.5,4000.0,,0.727,0.06,0.578,0.083,0.992,0.013
+3ba7c242,"stage18_009, stage18_019, stage18_029, stage18_039, stage18_049, stage18_059, stage18_069, stage18_079, stage18_089, stage18_099","high, medium, low",1.25,4000.0,,0.721,0.048,0.569,0.064,0.995,0.01
