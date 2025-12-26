@@ -9,6 +9,21 @@ Assuming a recording schedule used during the 2024/2025 season:\
 
 
 
+High precision option:\
+Ood.F1
+
+0.7667STD ±0.0172
+
+Ood.Precision
+
+0.9650STD ±0.0209
+
+Ood.Recall
+
+0.6370STD ±0.0333
+
+
+
 ### Daily Detection Performance Projections
 
 **Model Performance (Best Model):**
