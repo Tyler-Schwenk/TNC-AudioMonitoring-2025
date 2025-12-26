@@ -10,17 +10,21 @@ The improvements of this year's model can be summarized by a few key changes;
 
 
 
-#### 2024 Model OOD performance
+
+
+***
+
+### Generalizaiton - OOD performance
+
+#### 2024 Model OOD Performance
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-#### 2025 Model OOD
+#### 2025 Model OOD Performance
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-
-
-
+***
 
 {% columns %}
 {% column %}
@@ -48,7 +52,7 @@ The improvements of this year's model can be summarized by a few key changes;
 
 
 
-give auc. give other metrics. relat eback to reality of using in field. show improvemnt form previous models
+
 
 talk about how we know we have reached the maximum extraction of information from our given dataset, it will likely only be improved with more data
 
