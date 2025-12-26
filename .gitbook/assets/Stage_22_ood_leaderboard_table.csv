@@ -1,0 +1,6 @@
+Signature,Experiments,Sensitivity,ood.f1__mean,ood.f1__std,ood.precision__mean,ood.precision__std,ood.recall__mean,ood.recall__std
+3e91f744,stage22_005,1.5,0.801,0.0,0.936,0.0,0.7,0.0
+6848ac7a,stage22_004,1.25,0.801,0.0,0.936,0.0,0.7,0.0
+56fe13e7,stage22_003,1.0,0.756,0.0,0.989,0.0,0.611,0.0
+10da48df,stage22_001,0.5,0.729,0.0,0.996,0.0,0.575,0.0
+af3ae860,stage22_002,0.75,0.729,0.0,0.996,0.0,0.575,0.0
