@@ -26,7 +26,7 @@ BirdNET description - talk baout how this works, maybe show the coo graphic of h
 
 All parameters were swept in stages, varying one parameter at a time while holding thers constant. When applicable multiple parameters were varied in a fctorial sweep to detemine interactions between parameters (such as hyper paremetrs). Each configuration was duplicated 3 times, varying the seed for each run to ensure stability, as described below:
 
-These were trained within a custom training pipeline i created, linked here. This allowed me to implement custom parameters not supported by birdnet, as well as train in sweeps of 100 models at a time, automating file selection, model training, inference, and evalutaiton on my iid and ood datasets.
+These were trained within a custom training pipeline i created, linked [here](https://github.com/Tyler-Schwenk/BirdNET-CustomClassifierSuite). This allowed me to implement custom parameters not supported by birdnet, as well as train in sweeps of 100 models at a time, automating file selection, model training, inference, and evalutaiton on my iid and ood datasets.
 
 #### Seeds
 
