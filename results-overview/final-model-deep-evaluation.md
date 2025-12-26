@@ -1,8 +1,6 @@
 # Final Model Deep Evaluation
 
-give auc. give other metrics. relat eback to reality of using in field. show improvemnt form previous models
 
-talk about how we know we have reached the maximum extraction of information from our given dataset, it will likely only be improved with more data
 
 
 
@@ -12,9 +10,29 @@ how it performs at different sensitivities
 
 
 
-best threshold at different sensitivities
+#### best threshold at different sensitivities
 
-maybe show this via a graph. maybe these are not a single answer but more of a range
+Optimal f1 setup (sens X threshold X)
+
+{% columns %}
+{% column %}
+Sensitivity 0.5
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+Sensitivity 1.5
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+Maximum Precision setup
+
+
 
 
 
