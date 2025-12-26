@@ -8,7 +8,23 @@ The improvements of this year's model can be summarized by a few key changes;
 * More balanced precision-recall tradeoff, favoring stronger precision.
 * More generalized model, stronger performance under domain shift.
 
-### Stability
+***
+
+### Stability & Generalization
+
+Below are metrics of average F1 calculated at 5 sensitivity values \[0.5, 1.5]
+
+The 2025 model shows a much smaller standard deviation across sensitivity values, and improved performance in the OOD test set.
+
+**2024** model:
+
+* IID Mean F1 ± Std - 91.9 ± 5.8
+* OOD Mean F1 ± Std - 75.4 ± 6.5
+
+**2025** model:
+
+* IID Mean F1 ± Std - 97.1 ± 0.14
+* OOD Mean F1 ± Std - 88.5 ± 0.15
 
 #### 2024 Model OOD Performance
 
@@ -18,33 +34,15 @@ The improvements of this year's model can be summarized by a few key changes;
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
 ***
 
-### Generalization&#x20;
+### More Metrics
 
-Both models compared as average of performance calculated at 5 sensitivity values \[0.5, 1.5]
-
-**2024** model:
-
-* IID Mean F1 ± Std - 91.9 ± 5.8
-* OOD Mean F1 ± Std - 75.4 ± 6.5
-
-**2025** model:
-
-* IID Mean F1 ± Std - 0.9714 ± 0.14
-* OOD Mean F1 ± Std - 88.5 ± 0.15
-
-
-
-***
+The 2025 model showed a 7.9% improvement in AUC under the ROC curve, and a 12.7% improvement under the Precision-Recall curve; indicating an improved discriminatory ability and improved precision at a high recall.
 
 {% columns %}
 {% column %}
-#### 2024 @ Ideal Settings
+#### 2024 @ Ideal Sensitivity (1.5)
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -52,7 +50,7 @@ Both models compared as average of performance calculated at 5 sensitivity value
 {% endcolumn %}
 
 {% column %}
-#### 2025 @ Ideal Settings
+#### 2025 @ Ideal Sensitivity (0.75)
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
