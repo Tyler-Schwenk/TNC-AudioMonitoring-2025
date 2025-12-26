@@ -6,6 +6,7 @@
   * [Audio Data Examples](audio-data-split-design/audio-data-examples.md)
 * [Usage Instructions - copy this to higher level](setup-workflow.md)
 * [Improvement Overview](results-overview/README.md)
+  * [Daily Temporal Granularity](results-overview/daily-temporal-granularity.md)
   * [Final Model Deep Evaluation](results-overview/final-model-deep-evaluation.md)
   * [Previous model](results-overview/previous-model.md)
   * [Sensitivity effect](results-overview/sensitivity-effect.md)
