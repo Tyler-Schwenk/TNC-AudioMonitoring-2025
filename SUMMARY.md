@@ -7,6 +7,7 @@
   * [Audio Data Examples](audio-data-split-design/audio-data-examples.md)
 * [other methodologies explored](other-methodologies-explored.md)
 * [Best model results](results-overview/README.md)
+  * [Previous model](results-overview/previous-model.md)
   * [Sensitivity effect](results-overview/sensitivity-effect.md)
 * [Setup/workflow](setup-workflow.md)
 * [Looking Forward](looking-forward.md)
