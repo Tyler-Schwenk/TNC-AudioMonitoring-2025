@@ -1,4 +1,4 @@
-# Stage 5 - Curated Data Subset Addition
+# \[Archive] Stage 5 - Curated Data Subset Addition
 
 Stage 5 tested the addition of curated data sets - specifically; new mined hard negatives from field data that was previously now included in our dataset at all, and and subsets of our low quality data that were of higher quality. All tests were run with no mixup or label smoothing.
 
@@ -37,3 +37,45 @@ Stage 5 tested the addition of curated data sets - specifically; new mined hard 
 * **Dropout**: 0.25
 * **Focal Loss:** False
 * **Learning Rate**: 0.0005
+
+```yaml
+stage: 5
+out_dir: config/sweeps/stage5_sweep
+axes:
+  seed:
+  - 123
+  - 456
+  - 789
+  quality:
+  - - high
+    - medium
+  balance:
+  - true
+  - false
+  positive_subsets:
+  - []
+  - - AudioData\curated\bestLowQuality\large
+  - - AudioData\curated\bestLowQuality\medium
+  - - AudioData\curated\bestLowQuality\small
+  - - AudioData\curated\bestLowQuality\top50
+  negative_subsets:
+  - []
+  - - AudioData\curated\hardNeg\hardneg_conf_min_50
+  - - AudioData\curated\hardNeg\hardneg_conf_min_99
+  - - AudioData\curated\hardNeg\hardnet_conf_min_85
+base_params:
+  epochs: 50
+  upsampling_ratio: 0.0
+  mixup: false
+  label_smoothing: false
+  focal-loss: false
+  focal-loss-gamma: 2.0
+  focal-loss-alpha: 0.25
+  dropout: 0.25
+  learning_rate: 0.0005
+  batch_size: 32
+  fmin: 0
+  fmax: 15000
+  overlap: 0.0
+
+```

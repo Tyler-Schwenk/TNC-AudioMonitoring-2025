@@ -17,4 +17,41 @@ This would take a significant amount of time to make a new experiment structure 
 | stage7\_003, stage7\_007, stage7\_011 | No      | grunt, growl, both | 0.756 ± 0.047       | 0.833 ± 0.111              | 0.717 ± 0.145           |
 | stage7\_004, stage7\_008, stage7\_012 | No      | grunt, both        | 0.708 ± 0.009       | 0.983 ± 0.022              | 0.554 ± 0.013           |
 
+```yaml
+stage: 7
+out_dir: config/sweeps/stage7_sweep
+axes:
+  seed:
+  - 123
+  - 456
+  - 789
+  quality:
+  - - high
+    - medium
+  balance:
+  - true
+  - false
+  call_type:
+  - - grunt
+    - growl
+    - both
+  - - grunt
+    - both
+base_params:
+  epochs: 50
+  upsampling_ratio: 0.0
+  mixup: true
+  label_smoothing: true
+  focal-loss: false
+  focal-loss-gamma: 2.0
+  focal-loss-alpha: 0.25
+  dropout: 0.25
+  learning_rate: 0.0005
+  batch_size: 32
+  fmin: 0
+  fmax: 15000
+  overlap: 0.0
+
+```
+
 {% file src="../.gitbook/assets/stage_7_leaderboard_table.csv" %}
