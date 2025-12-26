@@ -2,18 +2,19 @@
 
 ## Key improvements
 
-The improvements of this year's model can be summarized by two key changes;
+The improvements of this year's model can be summarized by a few key changes;
 
-* An increase in stability across Sensitivity values and threshold settings
-* More balanced precision-recall tradeoff, favoring stronger precision
+* An increase in stability across Sensitivity values and threshold settings.
+* More balanced precision-recall tradeoff, favoring stronger precision.
+* More generalized model, stronger performance under domain shift.
 
 
 
-#### 2024 Model
+#### 2024 Model OOD performance
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-#### 2025 Model
+#### 2025 Model OOD
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
