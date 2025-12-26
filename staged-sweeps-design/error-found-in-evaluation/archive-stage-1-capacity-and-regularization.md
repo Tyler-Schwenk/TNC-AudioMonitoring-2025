@@ -47,12 +47,6 @@ I ran a **72-config factorial sweep** to explore model capacity and regularizati
 * No augmentation: label smoothing, mixup, focal loss = off
 * No upsampling (upsampling\_ratio=0.0)
 
-Full config file here:
-
-### base.yaml
-
-Code•3KB
-
 ***
 
 ## Top Models <a href="#top-models" id="top-models"></a>

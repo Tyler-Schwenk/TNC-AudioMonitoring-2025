@@ -26,8 +26,8 @@ Stage 3C explored potential interactions between upsampling, learning rate, and 
 
 | Factor                 | Values / Notes                                                   |
 | ---------------------- | ---------------------------------------------------------------- |
-| **Upsampling Ratio**   | 0.0 → 1.0 (increment 0.1–0.25)                                   |
-| **Upsampling Mode**    | `repeat` vs `linear`                                             |
+| **Upsampling Ratio**   | 0, 0.1, 0.2, 0.3, 0.4, 0.45, 0.5, 0.55, 0.6, 0.75, 1             |
+| **Upsampling Mode**    | Repear/Linear                                                    |
 | **Seeds**              | 123, 456, 789                                                    |
 | **Anchors (fixed)**    | HU = 512 Dropout = 0.25 LR = 5×10⁻⁴ Batch = 32                   |
 | **Augmentations**      | Label Smoothing ON (ε = 0.1), Mixup ON (α = 0.2), Focal Loss OFF |
@@ -87,10 +87,4 @@ Stage 4 will intentionally introduce **real imbalance and noise** to evaluate ro
 * Explore **targeted upsampling** (by call type or quality level) rather than global ratios.
 * Optionally apply **autotune (Keras-Tuner Hyperband)** for fine learning-rate/regularization refinement.
 
-The Stage 2 best checkpoint (HU 512 / Dropout 0.25 / LR 5×10⁻⁴ / LS + MX ON) will serve as the _frozen baseline_ for all Stage 4 robustness tests.
-
-***
-
-**Summary Statement**\
-Stage 3 demonstrated that when the training data are already balanced and well-curated, additional upsampling provides no measurable improvement and can even reduce precision.\
-These findings validate the soundness of the existing dataset design and set the stage for the next phase: robustness testing under realistic, noisy, and imbalanced field conditions.
+The Stage 2 best checkpoint (HU 512 / Dropout 0.25 / LR 5×10⁻⁴ / LS + MX ON) will serve as the frozen baseline for all Stage 4 robustness tests.
