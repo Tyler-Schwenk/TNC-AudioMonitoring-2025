@@ -8,6 +8,8 @@ The improvements of this year's best model can be summarized by a few key change
 * More balanced precision-recall tradeoff, favoring stronger precision.
 * More generalized model, stronger performance under domain shift.
 
+A full comparison to the previous 2024 model and be found [here](./#comparative-analysis)
+
 ***
 
 ## Metrics Overview
@@ -23,5 +25,8 @@ Two models are shown for different use cases.
 
 ***
 
-## Comparative Analysis
+## Daily Prsence/Absence Detection
 
+The primary use-case for this model is for daily presence/absence detections for audio monitoring at the Santa Rosa Plateau. For this reason, I used records from the 2024/2025 audio monitoring season to estimate the practicality of these models for real world deployment
+
+COmpare TO PREVIOUS MODEL AS WELL
