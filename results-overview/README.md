@@ -1,14 +1,22 @@
 # Final Model Analysis
 
+## Key
+
+Three models will be discussed throughout this analysis:
+
+* **2024 model** - My previously developed model, that was used during the 2024/2025 audio monitoring season for RADR.
+* **F1 model** - My new highest performing model created for this contract. This model has the highest discriminatory power (F1, AUC) and is technically the best performing classifier.
+* **Precision model** - Anther new model created for this contract. This model excels at our target task of maximizing precision with the goal of reducing false positive review workload. It comes at a cost to recall as compared to the F1 model.
+
 ## Key improvements
 
 The improvements of this year's best model can be summarized by a few key changes;
 
 * An increase in stability across Sensitivity values and threshold settings.
 * More balanced precision-recall tradeoff, favoring stronger precision.
-* More generalized model, stronger performance under domain shift.
+* More generalized model, with stronger performance under domain shift.
 
-A full comparison to the previous 2024 model and be found [here](./#comparative-analysis)
+A full comparison to the previous 2024 model and be found [here](comparative-analysis.md)
 
 ***
 
@@ -16,17 +24,20 @@ A full comparison to the previous 2024 model and be found [here](./#comparative-
 
 #### Operating-Point Summary (OOD)
 
-Two models are shown for different use cases.
-
-| Configuration Goal        | F1    | Precision | Recall |
-| ------------------------- | ----- | --------- | ------ |
-| **Best Overall F1**       | 88.6% | 89.7%     | 87.5%  |
-| **High-Precision Option** | 76.1% | 98.5%     | 62.0%  |
+| Configuration Goal  | F1    | Precision | Recall |
+| ------------------- | ----- | --------- | ------ |
+| **Best Overall F1** | 88.6% | 89.7%     | 87.5%  |
+| **High-Precision**  | 76.1% | 98.5%     | 62.0%  |
+| **2024**            |       |           |        |
 
 ***
 
-## Daily Prsence/Absence Detection
+## Daily Presence/Absence Detection
 
-The primary use-case for this model is for daily presence/absence detections for audio monitoring at the Santa Rosa Plateau. For this reason, I used records from the 2024/2025 audio monitoring season to estimate the practicality of these models for real world deployment
+The primary use-case for this model is for daily presence/absence detections for audio monitoring at the Santa Rosa Plateau. For this reason, I used records from the 2024/2025 audio monitoring season to estimate the practicality of these models for real world deployment.
 
-COmpare TO PREVIOUS MODEL AS WELL
+| Metric                                     | F1 Model   | Precision Model |
+| ------------------------------------------ | ---------- | --------------- |
+| Daily Detection Accuracy                   | 99.0%      | 95.5%           |
+| False Positive Burden; Flagged Audio/Night | 45 minutes | 7 minutes       |
+| Total flagged positive files               | 906        | 141             |

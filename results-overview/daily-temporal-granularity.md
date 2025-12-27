@@ -41,52 +41,37 @@ During that season the recording schedule used was from 5pm-11pm, 1 min on / 9 m
 
 ## Evaluation
 
-#### False Absence Risk by Calling Activity
+### False Absence Risk by Calling Activity
 
-**Probability of missing detection = (1 - Recall)^N**, where N = number of positive files
+Probability of missing detection = (1 - Recall)^N, where N = number of positive files
 
-| Scenario                 | Nights (%) | Best F1 Model | High Precision Model |
-| ------------------------ | ---------- | ------------- | -------------------- |
-| **1 file**               | 11 (7.9%)  | 12.5% miss    | 38.0% miss           |
-| **5 files** (25th %ile)  | \~25%      | 0.03% miss    | 1.0% miss            |
-| **20 files** (median)    | \~50%      | <0.0001% miss | <0.0001% miss        |
-| **53 files** (75th %ile) | \~75%      | negligible    | negligible           |
+| Calling Activity | Nights  | Best F1 Missed   | High Precision Missed |
+| ---------------- | ------- | ---------------- | --------------------- |
+| 1 file           | 11      | 1.4 nights       | 4.2 nights            |
+| 2-10 files       | 44      | <1 night         | \~2 nights            |
+| 11+ files        | 84      | 0 nights         | 0 nights              |
+| **Total**        | **139** | **\~1.4 nights** | **\~6.2 nights**      |
 
-#### Expected Nights with Missed Detection Per Season
+#### Expected Missed Detections Per Season
 
-Out of 139 recording nights with RADR present:
-
-| Model                    | Expected Missed Nights/Season     |
-| ------------------------ | --------------------------------- |
-| **Best F1 Model**        | **1.4 nights** (11 × 0.125 = 1.4) |
-| **High Precision Model** | **4.2 nights** (11 × 0.380 = 4.2) |
-
-**Key Insight:** The high-precision model would miss RADR on approximately **3% of nights** (4.2/139) when it's actually present, compared to **1% of nights** (1.4/139) with the best F1 model.
-
-#### Weighted False Absence Rate Across All Nights
-
-Calculating across the full distribution:
-
-| Model                    | Weighted False Absence Rate     |
-| ------------------------ | ------------------------------- |
-| **Best F1 Model**        | **\~1%** of RADR-present nights |
-| **High Precision Model** | **\~3%** of RADR-present nights |
+| Model                    | Missed Nights    | Daily Detection Accuracy |
+| ------------------------ | ---------------- | ------------------------ |
+| **Best F1 Model**        | 1.4 / 139 (1.0%) | **99.0%**                |
+| **High Precision Model** | 6.2 / 139 (4.5%) | **95.5%**                |
 
 ***
 
-#### Trade-Off Analysis
+### Expected Review Burden
 
-| Metric                              | Best F1 Model | High Precision Model |
-| ----------------------------------- | ------------- | -------------------- |
-| **Review burden**                   | 45 min/night  | 7 min/night          |
-| **FP per night (3-sec segments)**   | 888           | 129                  |
-| **Detection (median night)**        | >99.9999%     | >99.9999%            |
-| **Detection (quiet 1-call nights)** | 87.5%         | 62.0%                |
+Per Median Night (20 true positives, 8,640 segments processed):
 
-***
+Review Time = Total Flagged Files × 3 seconds
 
-####
+Where: Total Flagged = (20 × Recall) + (8,620 × (1 - Precision))
 
-
+| Model                    | False Positives | Total Flagged | Review Time/Night | Season Total (139 nights) |
+| ------------------------ | --------------- | ------------- | ----------------- | ------------------------- |
+| **Best F1 Model**        | 888 files       | 906 files     | 45 minutes        | 104 hours                 |
+| **High Precision Model** | 129 files       | 141 files     | 7 minutes         | 16 hours                  |
 
 {% file src="../.gitbook/assets/positive_counts_by_recorder_date (1).txt" %}
