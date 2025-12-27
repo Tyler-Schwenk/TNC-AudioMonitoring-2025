@@ -5,8 +5,8 @@
 Three models will be discussed throughout this analysis:
 
 * [**2024 model**](2024-model.md) - My previously developed model, that was used during the 2024/2025 audio monitoring season for RADR.
-* **F1 model** - My new highest performing model created for this contract. This model has the highest discriminatory power (F1, AUC) and is technically the best performing classifier.
-* **Precision model** - Anther new model created for this contract. This model excels at our target task of maximizing precision with the goal of reducing false positive review workload. It comes at a cost to recall as compared to the F1 model.
+* [**F1 model**](../setup-workflow.md#high-f1-model) - My new highest performing model created for this contract. This model has the highest discriminatory power (F1, AUC) and is technically the best performing classifier.
+* [**Precision model**](../setup-workflow.md#recommended-high-precision-model) - Another new model created for this contract. This model excels at our target task of maximizing precision with the goal of reducing false positive review workload. It comes at a cost to recall as compared to the F1 model.
 
 ## Key improvements
 
