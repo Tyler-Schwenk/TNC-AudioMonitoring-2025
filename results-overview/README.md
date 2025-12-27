@@ -28,7 +28,7 @@ A full comparison to the previous 2024 model and be found [here](comparative-ana
 | ------------------- | ----- | --------- | ------ |
 | **Best Overall F1** | 88.6% | 89.7%     | 87.5%  |
 | **High-Precision**  | 76.1% | 98.5%     | 62.0%  |
-| **2024**            |       |           |        |
+| **2024**            | 80.3% | 76.0%     | 85.1%  |
 
 ***
 
