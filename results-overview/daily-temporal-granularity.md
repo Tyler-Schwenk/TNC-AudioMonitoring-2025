@@ -45,19 +45,20 @@ During that season the recording schedule used was from 5pm-11pm, 1 min on / 9 m
 
 Probability of missing detection = (1 - Recall)^N, where N = number of positive files
 
-| Calling Activity | Nights  | Best F1 Missed   | High Precision Missed |
-| ---------------- | ------- | ---------------- | --------------------- |
-| 1 file           | 11      | 1.4 nights       | 4.2 nights            |
-| 2-10 files       | 44      | <1 night         | \~2 nights            |
-| 11+ files        | 84      | 0 nights         | 0 nights              |
-| **Total**        | **139** | **\~1.4 nights** | **\~6.2 nights**      |
+| Calling Activity | Nights  | Best F1 Missed   | High Precision Missed | 2024             |
+| ---------------- | ------- | ---------------- | --------------------- | ---------------- |
+| 1 file           | 11      | 1.4 nights       | 4.2 nights            | 1.6 nights       |
+| 2-10 files       | 44      | <1 night         | \~2 nights            | <1 night         |
+| 11+ files        | 84      | 0 nights         | 0 nights              | 0 nights         |
+| **Total**        | **139** | **\~1.4 nights** | **\~6.2 nights**      | **\~1.7 nights** |
 
 #### Expected Missed Detections Per Season
 
-| Model                    | Missed Nights    | Daily Detection Accuracy |
-| ------------------------ | ---------------- | ------------------------ |
-| **Best F1 Model**        | 1.4 / 139 (1.0%) | **99.0%**                |
-| **High Precision Model** | 6.2 / 139 (4.5%) | **95.5%**                |
+| Model                    | Missed Nights     | Daily Detection Accuracy |
+| ------------------------ | ----------------- | ------------------------ |
+| **Best F1 Model**        | 1.4 / 139 (1.0%)  | **99.0%**                |
+| **High Precision Model** | 6.2 / 139 (4.5%)  | **95.5%**                |
+| **2024 Model**           |  1.7 / 139 (1.2%) | **98.8%**                |
 
 ***
 
@@ -73,5 +74,6 @@ Where: Total Flagged = (20 × Recall) + (8,620 × (1 - Precision))
 | ------------------------ | --------------- | ------------- | ----------------- | ------------------------- |
 | **Best F1 Model**        | 888 files       | 906 files     | 45 minutes        | 104 hours                 |
 | **High Precision Model** | 129 files       | 141 files     | 7 minutes         | 16 hours                  |
+| **2024 Model**           | 2,069 files     | 2,086 files   | 104 minutes       | 241 hours                 |
 
 {% file src="../.gitbook/assets/positive_counts_by_recorder_date (1).txt" %}
