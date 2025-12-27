@@ -1,14 +1,25 @@
 # Usage Instructions - copy this to higher level
 
-run this back through birdnet gui and prep the actual workflow. give best config stuff\
-\
-copy from previous documentation! [https://tyler-schwenk.gitbook.io/workflow-rana-draytonii-analysis](https://tyler-schwenk.gitbook.io/workflow-rana-draytonii-analysis)
+1. Download the latest release of [BirdNET Analyzer](https://github.com/birdnet-team/BirdNET-Analyzer/releases/tag/v2.4.0)
+2. Download desired [custom model](setup-workflow.md#custom-models), and unzip
+3. Under 'Batch Analysis' - select your input directory with audio files to be reviewed, and output directory for results.
+4. Adjust 'Inference Settings'. Recommended with Precision model:
+   1. Sensitivity - 1.5
+   2. Minimum Confidence - 0.3
+   3. All else default
+5. Adjust 'Species Selection'
+   1. Select 'Custom Species List'
+   2. select 'model\_Labels.txt' from zip file
 
 
 
-#### High precision model:
+### Custom Models
 
-Recommended for general daily precensce/absence monitoring, when recording many hours per day and minimal manual review is desired.
+Full descriptions of performance at [Final Model Analysis](results-overview/)
+
+#### Recommended: High precision model
+
+Recommended for general daily presence/absence monitoring, when recording many hours per day and where minimal manual review is desired.
 
 Sens 1.5, threshold: 0.3;
 
@@ -27,3 +38,7 @@ best config for f1: sensitivity .75, threshold 1.0
 F1: .886, Precision: .897, Recall: .875
 
 {% file src=".gitbook/assets/F1_Model_2025 (1).zip" %}
+
+Full walkthrough from 2024 contract:
+
+[https://tyler-schwenk.gitbook.io/workflow-rana-draytonii-analysis](https://tyler-schwenk.gitbook.io/workflow-rana-draytonii-analysis)
