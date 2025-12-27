@@ -10,6 +10,9 @@
 5. Adjust 'Species Selection'
    1. Select 'Custom Species List'
    2. select 'model\_Labels.txt' from zip file
+6. Adjust 'Model selection'
+   1. Select 'custom classifier' - model.tflite from zip file
+7. Adjust output settings as desired. I recommend selecting 'Combine Selection Tables'
 
 
 
