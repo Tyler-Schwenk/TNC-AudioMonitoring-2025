@@ -33,7 +33,6 @@
     * [Upsampling](parameter-effects/imbalance-regularization/upsampling.md)
     * [Focal loss](parameter-effects/imbalance-regularization/focal-loss.md)
   * [Frequency - Max](parameter-effects/frequency-max.md)
-  * [Sensitivity/Thesholds](parameter-effects/sensitivity-thesholds.md)
 * [Staged Sweeps Design](staged-sweeps-design/README.md)
   * [Stage 0 - 2024 model](staged-sweeps-design/previous-model.md)
   * [--Error found in Evaluation--](staged-sweeps-design/error-found-in-evaluation/README.md)

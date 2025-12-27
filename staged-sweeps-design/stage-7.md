@@ -2,11 +2,7 @@
 
 In this experimental stage, I briefly explored the idea of training the model to identify specific types of the California red-legged frog's call, rather than both as the same label.&#x20;
 
-
-
-This would take a significant amount of time to make a new experiment structure and testing dataset around each call type, and I consider it out of the scope of this current contract. It is an idea that could be explored in the future though
-
-
+This would take a significant amount of time to make a new experiment structure and testing dataset around each call type, and I consider it out of the scope of this current contract. It is an idea that could be explored in the future.
 
 #### Stage 7 – OOD Performance Summary
 
