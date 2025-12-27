@@ -4,7 +4,7 @@
 
 (21,887) 3-second audio files were collected and manually verified for training and testing these models. All files were split into positive or negative (presence/absence of RADR vocalization). All positive files were further sorted into 'high', 'medium' or 'low' quality, and 'grunt', 'growl', or 'both' vocalization types.
 
-All audio clips were preprocessed into 3-second files at 48 kHz, 16 bit, mono WAV files.
+All original audio data already formatted as, or preprocessed into, 3-second files at 48 kHz, 16 bit, mono WAV files.
 
 ### General Analysis
 
