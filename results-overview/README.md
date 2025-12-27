@@ -16,7 +16,7 @@ The improvements of this year's best model can be summarized by a few key change
 * More balanced precision-recall tradeoff, favoring stronger precision.
 * More generalized model, with stronger performance under domain shift.
 
-A full comparison to the previous 2024 model and be found [here](comparative-analysis.md)
+A full comparison of metrics to the previous 2024 model and be found [here](comparative-analysis.md)
 
 ***
 
