@@ -1,48 +1,76 @@
 # Daily Temporal Granularity
 
+## Overview
 
+Here I will compare my two models, evaluating their performance at the task of daily presence/absence monitoring, given data from the previous year's audio monitoring. The two models are:
 
-best config for f1: sens .75, threshold 1.0
+* Precision focused model at Sensitivity: 1.5, Threshold: 0.3
+* F1 focused model at Sensitivity: 0.75, Threshold: 1.0
 
-f1: .886, precision: .897, recall: .875
+### Model Performance Summary
 
-Assuming a recording schedule used during the 2024/2025 season:\
-5pm to 11pm, 9 min off, 1 minute on, 432 1-minute files.&#x20;
-
-
-
-
-
-High precision option:
-
-Sens 1.5, threshold: 0.3;
-
-F1: 76.1, Precision: 98.5, Recall: 62.0
-
-adjust threshold to 0.05;&#x20;
-
-F1: 80.0, Precision: 93.6, Recall: 70.0
-
-
-
-**Context & Methodology:**
-
-To estimate real-world performance at daily temporal granularity, I analyzed calling activity from the 2024/2025 field season for days where positive RADR detections occurred. this included 9 recorders and 139 recording nights.&#x20;
-
-This revealed typical calling patterns. In days where RADR calls were identified median of 20 positive files/night, with 84% of nights having ≥5 calls. 16% have only one file
-
-Our recording schedule (5pm-11pm, 1 min on / 9 min off) produces **432 1-minute files per night**, which are split into **8,640 3-second segments** for model inference. We use this ground truth to project false positive burden and detection confidence under different model configurations.
+| Metric                          | F1 Model       | Precision Model |
+| ------------------------------- | -------------- | --------------- |
+| **F1 Score**                    | 0.886          | 0.761           |
+| **Precision**                   | 0.897          | 0.985           |
+| **Recall**                      | 0.875          | 0.620           |
+| **Daily Detection Accuracy**    | **99.0%**      | **95.5%**       |
+| **False Positive Burden/Night** | **45 minutes** | **7 minutes**   |
+| Total flagged positive files    | 906            | 141             |
+| **Signal-to-Noise Ratio**       | 1.9%           | 8.8%            |
 
 ***
 
-#### Expected performance for Daily Detections
+## **Context & Methodology:**
 
-| Files/Night | % of Nights  | Detection Probability (Best F1) | Detection Probability (High Precision) |
-| ----------- | ------------ | ------------------------------- | -------------------------------------- |
-| 1 file      | 16%          | 87.5%                           | 62.0%                                  |
-| 5 files     | 25th %ile    | 99.97%                          | 99.0%                                  |
-| 20 files    | Median (50%) | >99.9999%                       | >99.9999%                              |
-| 53 files    | 75th %ile    | \~100%                          | \~100%                                 |
+To estimate real-world performance at daily temporal granularity I analyzed calling activity from the 2024/2025 field season, collecting days where positive RADR detections occurred. This included data from 9 recorders across 139 recording nights.&#x20;
+
+During that season the recording schedule used was from 5pm-11pm, 1 min on / 9 min off - producing **432 1-minute files per night**, which translates to **8,640 3-second segments** for model inference. This ground truth is used to project false positive burden and detection confidence under different model configurations.
+
+#### **2024/2025 Calling Season Data Summary:**
+
+| Files/Night | # of Nights        | % of Nights | Cumulative |
+| ----------- | ------------------ | ----------- | ---------- |
+| 1 file      | 11                 | 7.9%        | 7.9%       |
+| 2-10 files  | 44                 | 31.7%       | 39.6%      |
+| 11-25 files | 19                 | 13.7%       | 53.3%      |
+| 26+ files   | 65                 | 46.7%       | 100%       |
+| **Median**  | **20 files/night** | 50 %        | 50 %       |
+
+***
+
+## Evaluation
+
+#### False Absence Risk by Calling Activity
+
+**Probability of missing detection = (1 - Recall)^N**, where N = number of positive files
+
+| Scenario                 | Nights (%) | Best F1 Model | High Precision Model |
+| ------------------------ | ---------- | ------------- | -------------------- |
+| **1 file**               | 11 (7.9%)  | 12.5% miss    | 38.0% miss           |
+| **5 files** (25th %ile)  | \~25%      | 0.03% miss    | 1.0% miss            |
+| **20 files** (median)    | \~50%      | <0.0001% miss | <0.0001% miss        |
+| **53 files** (75th %ile) | \~75%      | negligible    | negligible           |
+
+#### Expected Nights with Missed Detection Per Season
+
+Out of 139 recording nights with RADR present:
+
+| Model                    | Expected Missed Nights/Season     |
+| ------------------------ | --------------------------------- |
+| **Best F1 Model**        | **1.4 nights** (11 × 0.125 = 1.4) |
+| **High Precision Model** | **4.2 nights** (11 × 0.380 = 4.2) |
+
+**Key Insight:** The high-precision model would miss RADR on approximately **3% of nights** (4.2/139) when it's actually present, compared to **1% of nights** (1.4/139) with the best F1 model.
+
+#### Weighted False Absence Rate Across All Nights
+
+Calculating across the full distribution:
+
+| Model                    | Weighted False Absence Rate     |
+| ------------------------ | ------------------------------- |
+| **Best F1 Model**        | **\~1%** of RADR-present nights |
+| **High Precision Model** | **\~3%** of RADR-present nights |
 
 ***
 
@@ -57,30 +85,7 @@ Our recording schedule (5pm-11pm, 1 min on / 9 min off) produces **432 1-minute 
 
 ***
 
-#### Recommendation
-
-**For daily presence/absence monitoring, the High Precision Model is strongly recommended:**
-
-**Key Benefits:**
-
-* **85% reduction in false positives** (129 vs 888 per night)
-* **Saves 88 hours of review time** per season (16 vs 104 hours total)
-* **Still maintains >99% detection confidence on 84% of nights with positive detections** (those with ≥5 calls)
-* **4.6× better signal-to-noise ratio** (8.8% vs 1.9%)
-
-**Acceptable Trade-Off:**
-
-* **Lower recall** (62% vs 87.5%) primarily affects the rarest scenario: single-call nights (16% of nights)
-* On typical calling nights (median 20 calls), both models achieve >99.9999% detection probability
-* The F1 drop (0.886 → 0.761) is acceptable when review burden is the primary constraint
-
-**Mitigation Strategy for Low-Call Nights:**
-
-* Days with 0 detections: Flag 10-20% for manual spot-check validation
-* Document any systematic patterns in missed detections
-* High confidence in "presence" calls (98.5% precision means false positives are rare)
-
-**Bottom Line:** The High Precision Model reduces workload by 85% while maintaining excellent performance for the primary use case of daily presence/absence determination. The lower recall on rare single-call nights is an acceptable trade-off for the dramatic reduction in false positives.
+####
 
 
 
