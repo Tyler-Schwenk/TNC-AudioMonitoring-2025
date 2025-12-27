@@ -4,6 +4,8 @@ In this experimental stage, I briefly explored the idea of training the model to
 
 This would take a significant amount of time to make a new experiment structure and testing dataset around each call type, and I consider it out of the scope of this current contract. It is an idea that could be explored in the future.
 
+It should be noted that these models were evaluated on the same iid and ood testing data as all other models, there was no separation of call typed in the evaluation data.
+
 #### Stage 7 – OOD Performance Summary
 
 | Experiments                           | Balance | Call Type          | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
