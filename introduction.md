@@ -14,7 +14,7 @@ Both new models also retain more stability across configuration settings, and ha
 | **High-Precision**  | 76.1% | 98.5%     | 62.0%  |
 | **2024**            | 80.3% | 76.0%     | 85.1%  |
 
-The Precision model promised to reduce the amount of false positive data 104 minutes to 7minute while maintaining 95.5% detection accuracy at the daily presence/absence level.
+The Precision model promised to reduce the amount of false positive data by 93.8% while maintaining 95.5% detection accuracy at the daily presence/absence level.
 
 ***
 
