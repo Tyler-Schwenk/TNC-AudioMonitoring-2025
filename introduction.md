@@ -1,6 +1,8 @@
 # Introduction
 
-This project improves _Rana draytonii_ (RADR) call detection using BirdNET Analyzer. The primary goal is **higher daily detection precision**, so you review fewer false positives. The secondary goal is **robust performance under domain shift**, across sites and recorders.
+This project improves _Rana draytonii_ (RADR) call detection using BirdNET Analyzer. The primary goal was to "Refine the application of the previously developed Rana draytonii BirdNET&#x20;machine learning model to reduce manual review effort of field recordings. This will be accomplished by iterating on the&#x20;existing model and by developing recommended default settings to achieve specific precision, recall and accuracy."
+
+This goal was achieved by developping two
 
 This work delivers:
 
@@ -27,4 +29,4 @@ This work delivers:
 
 ### Resources
 
-* Training pipeline repo: [https://github.com/Tyler-Schwenk/BirdNET-CustomClassifierSuite](https://github.com/Tyler-Schwenk/BirdNET-CustomClassifierSuite)
+* Custom training pipeline repo: [https://github.com/Tyler-Schwenk/BirdNET-CustomClassifierSuite](https://github.com/Tyler-Schwenk/BirdNET-CustomClassifierSuite)
