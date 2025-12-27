@@ -2,21 +2,16 @@
 
 Following up on a discussion from one of our meetings - this was another experimental sweep to gauge the effectiveness of monitoring for both RADR and Bullfrogs at the same time.
 
-This could be beneficial when being deployed on a device with limited space for custom models, if we are also trying to monitor for a wider range of species within an environment.
+Appended labels could be beneficial when being deployed on a device with limited space for custom models, if we are also trying to monitor for a wider range of species within an environment.
 
-This was just testing the version that appends labeles - so searched for both bullfrogs and RADR. \
-this was tested to get an idea of how effective monitoring for both species at the same time could be.&#x20;
-
-this is also outside the scope of the contract, as they call at separate times
-
-explain replace vs append, benefits
+This was tested briefly (only 3 seeds total) to get a baseline idea of how effective monitoring for both species at the same time could be.&#x20;
 
 #### Stage 8 – OOD Comparison to Identical Config with replace mode
 
-| Experiments                           | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
-| ------------------------------------- | ------------------- | -------------------------- | ----------------------- |
-| stage8\_001, stage8\_002, stage8\_003 | 0.745 ± 0.015       | 0.929 ± 0.036              | 0.622 ± 0.007           |
-| stage6\_001, stage6\_019, stage6\_037 | 0.837 ± 0.141       | 0.855 ± 0.137              | 0.836 ± 0.189           |
+| Experiments | OOD F1 (mean ± std) | OOD Precision (mean ± std) | OOD Recall (mean ± std) |
+| ----------- | ------------------- | -------------------------- | ----------------------- |
+| Append      | 0.745 ± 0.015       | 0.929 ± 0.036              | 0.622 ± 0.007           |
+| Replace     | 0.837 ± 0.141       | 0.855 ± 0.137              | 0.836 ± 0.189           |
 
 ```yaml
 stage: 8
